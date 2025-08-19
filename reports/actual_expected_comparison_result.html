@@ -1,0 +1,3495 @@
+
+        <html>
+        <head>
+        <title>XML Comparison Report</title>
+        <style>
+            table {border-collapse: collapse; margin-bottom: 20px;}
+            th, td {border: 1px solid black; padding: 5px; text-align: center;}
+            .Failed {background-color: #ffc7ce; color: #9c0006;}
+        </style>
+        </head>
+        <body>
+        <h2>Part 1: Summary</h2>
+        <table>
+            <tr><th>Summary</th><th>Count</th></tr>
+            <tr><td>Total tags</td><td>1415</td></tr>
+            <tr><td>Passed</td><td>1203</td></tr>
+            <tr><td>Failed</td><td>212</td></tr>
+        </table>
+
+        <h2>Part 2: Failed Details</h2>
+        
+            <table>
+                <tr>
+                    <th>Row</th>
+                    
+                        <th>expected_PrpPropOccupyYrs</th>
+                        <th>actual_PrpPropOccupyYrs</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBldSiDeclared</th>
+                        <th>actual_PrpBldSiDeclared</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBedrooms</th>
+                        <th>actual_PrpBedrooms</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpWallConst</th>
+                        <th>actual_PrpWallConst</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpWallConst.1</th>
+                        <th>actual_PrpWallConst.1</th>
+                        <th>Status</th>
+                    
+                        <th>expected_FlatRoofInd</th>
+                        <th>actual_FlatRoofInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_AlarmCentralInd</th>
+                        <th>actual_AlarmCentralInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_AlarmProFitInd</th>
+                        <th>actual_AlarmProFitInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpFldCurrentInd</th>
+                        <th>actual_PrpFldCurrentInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpEmptyInd</th>
+                        <th>actual_PrpEmptyInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPermFamilyInd</th>
+                        <th>actual_PrpPermFamilyInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_BldClaimFreeYrs</th>
+                        <th>actual_BldClaimFreeYrs</th>
+                        <th>Status</th>
+                    
+                        <th>expected_factors</th>
+                        <th>actual_factors</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar12</th>
+                        <th>actual_Rar12</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar1</th>
+                        <th>actual_Rar1</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar10</th>
+                        <th>actual_Rar10</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar4</th>
+                        <th>actual_Rar4</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar5</th>
+                        <th>actual_Rar5</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar6</th>
+                        <th>actual_Rar6</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar9</th>
+                        <th>actual_Rar9</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqAdSetA</th>
+                        <th>actual_RarBldFreqAdSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetB</th>
+                        <th>actual_RarBldFreqEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFrzSetB</th>
+                        <th>actual_RarBldFreqFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqSubsSetA</th>
+                        <th>actual_RarBldFreqSubsSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqSubsSetB</th>
+                        <th>actual_RarBldFreqSubsSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyAdSetA</th>
+                        <th>actual_RarBldSvtyAdSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyAdSetB</th>
+                        <th>actual_RarBldSvtyAdSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyEscwSetB</th>
+                        <th>actual_RarBldSvtyEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFireSetA</th>
+                        <th>actual_RarBldSvtyFireSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFldSetB</th>
+                        <th>actual_RarBldSvtyFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyStmSetA</th>
+                        <th>actual_RarBldSvtyStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqAdSetB</th>
+                        <th>actual_RarConFreqAdSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFireSetA</th>
+                        <th>actual_RarConFreqFireSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFireSetB</th>
+                        <th>actual_RarConFreqFireSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFldSetA</th>
+                        <th>actual_RarConFreqFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFldSetB</th>
+                        <th>actual_RarConFreqFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqStmSetA</th>
+                        <th>actual_RarConFreqStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqStmSetB</th>
+                        <th>actual_RarConFreqStmSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqThftSetA</th>
+                        <th>actual_RarConFreqThftSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqThftSetB</th>
+                        <th>actual_RarConFreqThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyEscwSetA</th>
+                        <th>actual_RarConSvtyEscwSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyFireSetA</th>
+                        <th>actual_RarConSvtyFireSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyFldSetA</th>
+                        <th>actual_RarConSvtyFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyStmSetA</th>
+                        <th>actual_RarConSvtyStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyStmSetB</th>
+                        <th>actual_RarConSvtyStmSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyThftSetA</th>
+                        <th>actual_RarConSvtyThftSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarPpSvtySetA</th>
+                        <th>actual_RarPpSvtySetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarPpSvtySetB</th>
+                        <th>actual_RarPpSvtySetB</th>
+                        <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    
+                        <td>None</td>
+                        <td>5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>82657.0</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>11</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Flint</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Concrete</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>3 years</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>
+        </td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>XXXXX</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>30</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>42</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>42</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>52</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>14</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>20</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>19</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>22</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>54</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>35</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>54</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>36</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>40</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>29</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>35</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                </tr>
+            </table>
+        
+            <table>
+                <tr>
+                    <th>Row</th>
+                    
+                        <th>expected_Scenario_Type</th>
+                        <th>actual_Scenario_Type</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PhDob</th>
+                        <th>actual_PhDob</th>
+                        <th>Status</th>
+                    
+                        <th>expected_MTA_StartDate</th>
+                        <th>actual_MTA_StartDate</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Residential_AddressLine_1</th>
+                        <th>actual_Residential_AddressLine_1</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Joint1NameSameInd</th>
+                        <th>actual_Joint1NameSameInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Cov</th>
+                        <th>actual_Cov</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PhUsualPaymentMtd</th>
+                        <th>actual_PhUsualPaymentMtd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPropOccupyYrs</th>
+                        <th>actual_PrpPropOccupyYrs</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpListbld</th>
+                        <th>actual_PrpListbld</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBedrooms</th>
+                        <th>actual_PrpBedrooms</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpWallConst</th>
+                        <th>actual_PrpWallConst</th>
+                        <th>Status</th>
+                    
+                        <th>expected_FlatRoofInd</th>
+                        <th>actual_FlatRoofInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PhPrevInsDecline</th>
+                        <th>actual_PhPrevInsDecline</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpFldLast10Ind</th>
+                        <th>actual_PrpFldLast10Ind</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpEmptyInd</th>
+                        <th>actual_PrpEmptyInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBusInd</th>
+                        <th>actual_PrpBusInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBusMoney</th>
+                        <th>actual_PrpBusMoney</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBusValuablesInd</th>
+                        <th>actual_PrpBusValuablesInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ConvInd</th>
+                        <th>actual_ConvInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpHE24Ind</th>
+                        <th>actual_PrpHE24Ind</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpFlpInd</th>
+                        <th>actual_PrpFlpInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ClaimDate</th>
+                        <th>actual_ClaimDate</th>
+                        <th>Status</th>
+                    
+                        <th>expected_factors</th>
+                        <th>actual_factors</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar11</th>
+                        <th>actual_Rar11</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar12</th>
+                        <th>actual_Rar12</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar4</th>
+                        <th>actual_Rar4</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar5</th>
+                        <th>actual_Rar5</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar9</th>
+                        <th>actual_Rar9</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetA</th>
+                        <th>actual_RarBldFreqEscwSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetB</th>
+                        <th>actual_RarBldFreqEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFldSetA</th>
+                        <th>actual_RarBldFreqFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFldSetB</th>
+                        <th>actual_RarBldFreqFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFrzSetB</th>
+                        <th>actual_RarBldFreqFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqGenSetB</th>
+                        <th>actual_RarBldFreqGenSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqThftSetB</th>
+                        <th>actual_RarBldFreqThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyAdSetB</th>
+                        <th>actual_RarBldSvtyAdSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFireSetA</th>
+                        <th>actual_RarBldSvtyFireSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFldSetA</th>
+                        <th>actual_RarBldSvtyFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFldSetB</th>
+                        <th>actual_RarBldSvtyFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyGenSetA</th>
+                        <th>actual_RarBldSvtyGenSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyGenSetB</th>
+                        <th>actual_RarBldSvtyGenSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyStmSetA</th>
+                        <th>actual_RarBldSvtyStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyStmSetB</th>
+                        <th>actual_RarBldSvtyStmSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtySubsSetB</th>
+                        <th>actual_RarBldSvtySubsSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyThftSetB</th>
+                        <th>actual_RarBldSvtyThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFireSetB</th>
+                        <th>actual_RarConFreqFireSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFldSetB</th>
+                        <th>actual_RarConFreqFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyAdSetA</th>
+                        <th>actual_RarConSvtyAdSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyFrzSetA</th>
+                        <th>actual_RarConSvtyFrzSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyGenSetB</th>
+                        <th>actual_RarConSvtyGenSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyThftSetA</th>
+                        <th>actual_RarConSvtyThftSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarRentersGrpSetA</th>
+                        <th>actual_RarRentersGrpSetA</th>
+                        <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>2</td>
+                    
+                        <td>None</td>
+                        <td>Quote</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>1999-11-14</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Current Date+5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>22 Kestrel Way</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Buildings</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Annually</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Not Listed</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>4</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Stone</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>3000.0</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>04/2023</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>
+        </td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>XXXXX</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>XXXXX</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>28</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>12</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>52</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>53</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>25</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>14</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>36</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>29</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                </tr>
+            </table>
+        
+            <table>
+                <tr>
+                    <th>Row</th>
+                    
+                        <th>expected_PrpManAdrChangeInd</th>
+                        <th>actual_PrpManAdrChangeInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Cov</th>
+                        <th>actual_Cov</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPropType</th>
+                        <th>actual_PrpPropType</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPropSubType</th>
+                        <th>actual_PrpPropSubType</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPhHomeowner</th>
+                        <th>actual_PrpPhHomeowner</th>
+                        <th>Status</th>
+                    
+                        <th>expected_FlatRoofInd</th>
+                        <th>actual_FlatRoofInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpAdults</th>
+                        <th>actual_PrpAdults</th>
+                        <th>Status</th>
+                    
+                        <th>expected_AlarmCentralInd</th>
+                        <th>actual_AlarmCentralInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_AlarmProFitInd</th>
+                        <th>actual_AlarmProFitInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpEmptyInd</th>
+                        <th>actual_PrpEmptyInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpSubsidInd</th>
+                        <th>actual_PrpSubsidInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ESB_ClaimSource</th>
+                        <th>actual_ESB_ClaimSource</th>
+                        <th>Status</th>
+                    
+                        <th>expected_BldClaimFreeYrs</th>
+                        <th>actual_BldClaimFreeYrs</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PhPaymentType</th>
+                        <th>actual_PhPaymentType</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar9</th>
+                        <th>actual_Rar9</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetA</th>
+                        <th>actual_RarBldFreqEscwSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFldSetA</th>
+                        <th>actual_RarBldFreqFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFldSetB</th>
+                        <th>actual_RarBldFreqFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqStmSetA</th>
+                        <th>actual_RarBldFreqStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyAdSetA</th>
+                        <th>actual_RarBldSvtyAdSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyEscwSetA</th>
+                        <th>actual_RarBldSvtyEscwSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFrzSetB</th>
+                        <th>actual_RarBldSvtyFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyStmSetA</th>
+                        <th>actual_RarBldSvtyStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtySubsSetA</th>
+                        <th>actual_RarBldSvtySubsSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtySubsSetB</th>
+                        <th>actual_RarBldSvtySubsSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyThftSetA</th>
+                        <th>actual_RarBldSvtyThftSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFireSetA</th>
+                        <th>actual_RarConFreqFireSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFldSetB</th>
+                        <th>actual_RarConFreqFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqStmSetA</th>
+                        <th>actual_RarConFreqStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqThftSetB</th>
+                        <th>actual_RarConFreqThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyAdSetA</th>
+                        <th>actual_RarConSvtyAdSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyEscwSetA</th>
+                        <th>actual_RarConSvtyEscwSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyFireSetB</th>
+                        <th>actual_RarConSvtyFireSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyThftSetB</th>
+                        <th>actual_RarConSvtyThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarPpFreqSetA</th>
+                        <th>actual_RarPpFreqSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarRentersGrpSetA</th>
+                        <th>actual_RarRentersGrpSetA</th>
+                        <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Buildings</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Town House</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Detached</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Rented - Council</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>4 years</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>12 Installments</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>28</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>12</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>27</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>42</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>28</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>14</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>33</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>20</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>20</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>22</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>36</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>35</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>49</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                </tr>
+            </table>
+        
+            <table>
+                <tr>
+                    <th>Row</th>
+                    
+                        <th>expected_EmployStatus</th>
+                        <th>actual_EmployStatus</th>
+                        <th>Status</th>
+                    
+                        <th>expected_OccupIndustry</th>
+                        <th>actual_OccupIndustry</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Occup</th>
+                        <th>actual_Occup</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPhHomeowner</th>
+                        <th>actual_PrpPhHomeowner</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPropOccupyYrs</th>
+                        <th>actual_PrpPropOccupyYrs</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpAdults</th>
+                        <th>actual_PrpAdults</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpChildren</th>
+                        <th>actual_PrpChildren</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PhPrevInsDecline</th>
+                        <th>actual_PhPrevInsDecline</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpFldLast10Ind</th>
+                        <th>actual_PrpFldLast10Ind</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PostcodeRisk</th>
+                        <th>actual_PostcodeRisk</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ESB_ClaimSource</th>
+                        <th>actual_ESB_ClaimSource</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ClaimCode</th>
+                        <th>actual_ClaimCode</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ClaimDate</th>
+                        <th>actual_ClaimDate</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ClaimAdrInd</th>
+                        <th>actual_ClaimAdrInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Actor</th>
+                        <th>actual_Actor</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar12</th>
+                        <th>actual_Rar12</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar2</th>
+                        <th>actual_Rar2</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar3</th>
+                        <th>actual_Rar3</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar5</th>
+                        <th>actual_Rar5</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqAdSetB</th>
+                        <th>actual_RarBldFreqAdSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetA</th>
+                        <th>actual_RarBldFreqEscwSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetB</th>
+                        <th>actual_RarBldFreqEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqFireSetB</th>
+                        <th>actual_RarBldFreqFireSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqSubsSetA</th>
+                        <th>actual_RarBldFreqSubsSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFireSetB</th>
+                        <th>actual_RarBldSvtyFireSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFldSetA</th>
+                        <th>actual_RarBldSvtyFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFrzSetB</th>
+                        <th>actual_RarBldSvtyFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyGenSetA</th>
+                        <th>actual_RarBldSvtyGenSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyGenSetB</th>
+                        <th>actual_RarBldSvtyGenSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyStmSetA</th>
+                        <th>actual_RarBldSvtyStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqAdSetB</th>
+                        <th>actual_RarConFreqAdSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqEscwSetB</th>
+                        <th>actual_RarConFreqEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFireSetB</th>
+                        <th>actual_RarConFreqFireSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFrzSetB</th>
+                        <th>actual_RarConFreqFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqGenSetA</th>
+                        <th>actual_RarConFreqGenSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqStmSetA</th>
+                        <th>actual_RarConFreqStmSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqStmSetB</th>
+                        <th>actual_RarConFreqStmSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyFrzSetB</th>
+                        <th>actual_RarConSvtyFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyThftSetA</th>
+                        <th>actual_RarConSvtyThftSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyThftSetB</th>
+                        <th>actual_RarConSvtyThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarPpSvtySetA</th>
+                        <th>actual_RarPpSvtySetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarRentersGrpSetA</th>
+                        <th>actual_RarRentersGrpSetA</th>
+                        <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>4</td>
+                    
+                        <td>None</td>
+                        <td>Self-employed (full time)</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Fee audit company</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Able Seaman or Woman</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Rented - Council</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>4</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>9</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>AL4 0N</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Fire</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>09/2021</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>tester</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>XXXXX</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>28</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>42</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>53</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>25</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>14</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>22</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>22</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>29</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>35</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                </tr>
+            </table>
+        
+            <table>
+                <tr>
+                    <th>Row</th>
+                    
+                        <th>expected_PhDob</th>
+                        <th>actual_PhDob</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PolStartDate</th>
+                        <th>actual_PolStartDate</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PhPostcodeResidence</th>
+                        <th>actual_PhPostcodeResidence</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPropSubType</th>
+                        <th>actual_PrpPropSubType</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpPhHomeowner</th>
+                        <th>actual_PrpPhHomeowner</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpListbld</th>
+                        <th>actual_PrpListbld</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBldSiDeclared</th>
+                        <th>actual_PrpBldSiDeclared</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBedrooms</th>
+                        <th>actual_PrpBedrooms</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpWallConst.1</th>
+                        <th>actual_PrpWallConst.1</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpFlatRoof</th>
+                        <th>actual_PrpFlatRoof</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpEmptyGtDays</th>
+                        <th>actual_PrpEmptyGtDays</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpSubsidInd</th>
+                        <th>actual_PrpSubsidInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PrpBldAdInd</th>
+                        <th>actual_PrpBldAdInd</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ClaimCode</th>
+                        <th>actual_ClaimCode</th>
+                        <th>Status</th>
+                    
+                        <th>expected_ClaimIncNet</th>
+                        <th>actual_ClaimIncNet</th>
+                        <th>Status</th>
+                    
+                        <th>expected_BldClaimFreeYrs</th>
+                        <th>actual_BldClaimFreeYrs</th>
+                        <th>Status</th>
+                    
+                        <th>expected_PolBrand</th>
+                        <th>actual_PolBrand</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarPcodeMatchLevel</th>
+                        <th>actual_RarPcodeMatchLevel</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar6</th>
+                        <th>actual_Rar6</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar7</th>
+                        <th>actual_Rar7</th>
+                        <th>Status</th>
+                    
+                        <th>expected_Rar8</th>
+                        <th>actual_Rar8</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqEscwSetB</th>
+                        <th>actual_RarBldFreqEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqSubsSetB</th>
+                        <th>actual_RarBldFreqSubsSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldFreqThftSetA</th>
+                        <th>actual_RarBldFreqThftSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyEscwSetB</th>
+                        <th>actual_RarBldSvtyEscwSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFldSetB</th>
+                        <th>actual_RarBldSvtyFldSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyFrzSetB</th>
+                        <th>actual_RarBldSvtyFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarBldSvtyStmSetB</th>
+                        <th>actual_RarBldSvtyStmSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFldSetA</th>
+                        <th>actual_RarConFreqFldSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConFreqFrzSetB</th>
+                        <th>actual_RarConFreqFrzSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyAdSetA</th>
+                        <th>actual_RarConSvtyAdSetA</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyAdSetB</th>
+                        <th>actual_RarConSvtyAdSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarConSvtyThftSetB</th>
+                        <th>actual_RarConSvtyThftSetB</th>
+                        <th>Status</th>
+                    
+                        <th>expected_RarPpFreqSetA</th>
+                        <th>actual_RarPpFreqSetA</th>
+                        <th>Status</th>
+                    
+                </tr>
+                <tr>
+                    <td>5</td>
+                    
+                        <td>None</td>
+                        <td>1978-01-07</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Current Date+3</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>B45 9ND</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>End Terraced</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Rented - Council</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Grade 1</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>16535.0</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>20</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Tile</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>30 - 60 days</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Fire</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>16325.0</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>2 years</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>Privilege</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>SCT</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>58</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>19</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>36</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>-5</td>
+                        <td class="Failed">Failed</td>
+                    
+                        <td>None</td>
+                        <td>49</td>
+                        <td class="Failed">Failed</td>
+                    
+                </tr>
+            </table>
+        
+
+        <h2>Part 3: Actual Result (Full Output)</h2>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>ScenarioID</th>
+      <th>Scenario_Type</th>
+      <th>Description</th>
+      <th>Experian_Title</th>
+      <th>Experian_FirstName</th>
+      <th>Experian_LastName</th>
+      <th>PhDob</th>
+      <th>PolStartDate</th>
+      <th>MTA_StartDate</th>
+      <th>PhPostcodeResidence</th>
+      <th>Residential_AddressLine_1</th>
+      <th>Residential_AddressLine_2</th>
+      <th>PrpManAdrChangeInd</th>
+      <th>Manual</th>
+      <th>EmployStatus</th>
+      <th>OccupIndustry</th>
+      <th>Occup</th>
+      <th>Communication</th>
+      <th>JointPhInd</th>
+      <th>JointDateOfBirth</th>
+      <th>RelationOfPolicyHolder</th>
+      <th>Joint1NameSameInd</th>
+      <th>Cov</th>
+      <th>PrpManPromoCode</th>
+      <th>PrpPromoORID</th>
+      <th>PrpManPromoID</th>
+      <th>PetInd</th>
+      <th>PhUsualPaymentMtd</th>
+      <th>PrpPropType</th>
+      <th>PrpSelfContainedInd</th>
+      <th>PrpPropSubType</th>
+      <th>PrpPhHomeowner</th>
+      <th>PrpPropOccupyYrs</th>
+      <th>PrpBldYear</th>
+      <th>PrpListbld</th>
+      <th>PrpBldSiDeclared</th>
+      <th>PrpBedrooms</th>
+      <th>PrpBathrooms</th>
+      <th>PrpWallConst</th>
+      <th>PrpWallConst.1</th>
+      <th>FlatRoofInd</th>
+      <th>PrpFlatRoof</th>
+      <th>PrpAdults</th>
+      <th>PrpChildren</th>
+      <th>AlarmCentralInd</th>
+      <th>AlarmProFitInd</th>
+      <th>AlarmSelfFitInd</th>
+      <th>AlarmSmokeInd</th>
+      <th>WaterDetectorInd</th>
+      <th>WaterValveInd</th>
+      <th>PrpBldRepairState</th>
+      <th>PrpBldInd</th>
+      <th>PrpBldRenovateInd</th>
+      <th>PrpBldConvertInd</th>
+      <th>PrpBldStoredInd</th>
+      <th>PrpBldOccupyInd</th>
+      <th>PrpBldStartDate</th>
+      <th>PrpBldEndDate</th>
+      <th>PrpBldCost</th>
+      <th>PrpBldContractorInd</th>
+      <th>PrpBldContractorInsureInd</th>
+      <th>BldFoundationInd</th>
+      <th>BldOtherInd</th>
+      <th>BldCosmeticInd</th>
+      <th>BldKitchenInd</th>
+      <th>BldFlooringInd</th>
+      <th>BldWindowsInd</th>
+      <th>BldRewireInd</th>
+      <th>BldRepairInd</th>
+      <th>BldRoofMainInd</th>
+      <th>BldRoofDetInd</th>
+      <th>BldRoofAttInd</th>
+      <th>BldWallsMainInd</th>
+      <th>BldWallsDetInd</th>
+      <th>BldWallsAttdInd</th>
+      <th>BldOutAttdInd</th>
+      <th>BldOutDetInd</th>
+      <th>BldLoftInd</th>
+      <th>BldExtendSingleInd</th>
+      <th>BldExtendDoubleInd</th>
+      <th>BldBasementInd</th>
+      <th>PrpBldBedrooms</th>
+      <th>BldBathroomInd</th>
+      <th>PrpBldBathrooms</th>
+      <th>PhPrevInsDecline</th>
+      <th>PrpFldLast10Ind</th>
+      <th>PrpFldCurrentInd</th>
+      <th>PrpEmptyInd</th>
+      <th>PrpEmptyGtDays</th>
+      <th>PrpEmptyReason</th>
+      <th>PrpSubsidInd</th>
+      <th>PrpSubsidAffected</th>
+      <th>PrpSubsidInsureInd</th>
+      <th>PrpSubsidRepairInd</th>
+      <th>PrpSubsidUnderpinInd</th>
+      <th>PrpSubsidCoalRepairInd</th>
+      <th>PrpSubsidIncidents</th>
+      <th>PrpSubsidMovementDate</th>
+      <th>PrpSubsidLongStandInd</th>
+      <th>PrpPermFamilyInd</th>
+      <th>PrpPermResInd</th>
+      <th>PrpUse</th>
+      <th>PrpFamilyInd</th>
+      <th>PrpOcc</th>
+      <th>PrpLodgeNum</th>
+      <th>PrpLodgeStudentInd</th>
+      <th>PrpLodgeCouncilInd</th>
+      <th>PrpGuestsDays</th>
+      <th>PrpGuestsMax</th>
+      <th>PrpForeignDays</th>
+      <th>PrpForeignMax</th>
+      <th>PrpShareNumPeople</th>
+      <th>PrpShareTenInd</th>
+      <th>PrpBusInd</th>
+      <th>PrpBusConnectInd</th>
+      <th>PrpBusRiskInd</th>
+      <th>PrpBusVisitorsDay</th>
+      <th>PrpBusVisitorsWeek</th>
+      <th>PrpBusOneRoomInd</th>
+      <th>PrpBusMoney</th>
+      <th>PrpBusStock</th>
+      <th>PrpBusValuablesInd</th>
+      <th>ConvInd</th>
+      <th>NwRbsAccInd</th>
+      <th>PrpBldMaterialsInd</th>
+      <th>PrpPermResStudentInd</th>
+      <th>SetsSuitesCovInd</th>
+      <th>EnhancedUpgradeInd</th>
+      <th>PostcodeRisk</th>
+      <th>PrpAddressLineRisk1</th>
+      <th>PrpAddressLineRisk2</th>
+      <th>PrpConSiDeclared</th>
+      <th>PrpBldAdInd</th>
+      <th>PrpConAdInd</th>
+      <th>ItmOwnedInd</th>
+      <th>ItmCategory</th>
+      <th>ItmSubCategory</th>
+      <th>ItmRolexInd</th>
+      <th>ItmDescription</th>
+      <th>ItmValue</th>
+      <th>ItmProof</th>
+      <th>ItmSerialInd</th>
+      <th>ItmStonesInd</th>
+      <th>ItmInsured</th>
+      <th>ItmOutsideHome</th>
+      <th>CycOwnedInd</th>
+      <th>CycInsured</th>
+      <th>CycDescription</th>
+      <th>CycValue</th>
+      <th>CycOutsideHomeInd</th>
+      <th>PrpPppSiDeclaredUnspec</th>
+      <th>PrpPppSiDeclaredUnspecHome</th>
+      <th>PrpHE24Ind</th>
+      <th>PrpFlpInd</th>
+      <th>ESB_ClaimSource</th>
+      <th>ClaimCode</th>
+      <th>ClaimDate</th>
+      <th>ClaimIncNet</th>
+      <th>ClaimAdrInd</th>
+      <th>ClaimCovType</th>
+      <th>BldClaimFreeYrs</th>
+      <th>ConClaimFreeYrs</th>
+      <th>RENT</th>
+      <th>RBS_REPLACE_CONTENTS</th>
+      <th>ESB_PhEmployeeInd</th>
+      <th>Actor</th>
+      <th>PolBrand</th>
+      <th>AddressLine3</th>
+      <th>Channel</th>
+      <th>Source_Code</th>
+      <th>Reason_code</th>
+      <th>PrpVolXS</th>
+      <th>Offerings</th>
+      <th>FBSaveInd</th>
+      <th>PrpFldReOverrideUI</th>
+      <th>PremiumOverRide</th>
+      <th>ConvDataInd</th>
+      <th>ConvStatus</th>
+      <th>ConvCustodyInd</th>
+      <th>ConvSentence</th>
+      <th>RenewalType</th>
+      <th>PolPaymentPlanAcc</th>
+      <th>PrpRetCallInd</th>
+      <th>LossCause</th>
+      <th>SubLossCause</th>
+      <th>CardType</th>
+      <th>PhPaymentType</th>
+      <th>PaymentForm</th>
+      <th>ESB_HhBrandPolicyInd</th>
+      <th>PolAutoRenewalAcc</th>
+      <th>PrpBldAdInd.1</th>
+      <th>PrpConAdInd.1</th>
+      <th>PrpHE24Ind.1</th>
+      <th>PrpFlpInd.1</th>
+      <th>rarFullPostCodeResponse</th>
+      <th>RarPcodeMatchLevel</th>
+      <th>factors</th>
+      <th>Rar11</th>
+      <th>Rar12</th>
+      <th>Rar1</th>
+      <th>Rar10</th>
+      <th>Rar2</th>
+      <th>Rar3</th>
+      <th>Rar4</th>
+      <th>Rar5</th>
+      <th>Rar6</th>
+      <th>Rar7</th>
+      <th>Rar8</th>
+      <th>Rar9</th>
+      <th>RarBldFreqAdSetA</th>
+      <th>RarBldFreqAdSetB</th>
+      <th>RarBldFreqEscwSetA</th>
+      <th>RarBldFreqEscwSetB</th>
+      <th>RarBldFreqFireSetA</th>
+      <th>RarBldFreqFireSetB</th>
+      <th>RarBldFreqFldSetA</th>
+      <th>RarBldFreqFldSetB</th>
+      <th>RarBldFreqFrzSetA</th>
+      <th>RarBldFreqFrzSetB</th>
+      <th>RarBldFreqGenSetA</th>
+      <th>RarBldFreqGenSetB</th>
+      <th>RarBldFreqStmSetA</th>
+      <th>RarBldFreqStmSetB</th>
+      <th>RarBldFreqSubsSetA</th>
+      <th>RarBldFreqSubsSetB</th>
+      <th>RarBldFreqThftSetA</th>
+      <th>RarBldFreqThftSetB</th>
+      <th>RarBldSvtyAdSetA</th>
+      <th>RarBldSvtyAdSetB</th>
+      <th>RarBldSvtyEscwSetA</th>
+      <th>RarBldSvtyEscwSetB</th>
+      <th>RarBldSvtyFireSetA</th>
+      <th>RarBldSvtyFireSetB</th>
+      <th>RarBldSvtyFldSetA</th>
+      <th>RarBldSvtyFldSetB</th>
+      <th>RarBldSvtyFrzSetA</th>
+      <th>RarBldSvtyFrzSetB</th>
+      <th>RarBldSvtyGenSetA</th>
+      <th>RarBldSvtyGenSetB</th>
+      <th>RarBldSvtyStmSetA</th>
+      <th>RarBldSvtyStmSetB</th>
+      <th>RarBldSvtySubsSetA</th>
+      <th>RarBldSvtySubsSetB</th>
+      <th>RarBldSvtyThftSetA</th>
+      <th>RarBldSvtyThftSetB</th>
+      <th>RarConFreqAdSetA</th>
+      <th>RarConFreqAdSetB</th>
+      <th>RarConFreqEscwSetA</th>
+      <th>RarConFreqEscwSetB</th>
+      <th>RarConFreqFireSetA</th>
+      <th>RarConFreqFireSetB</th>
+      <th>RarConFreqFldSetA</th>
+      <th>RarConFreqFldSetB</th>
+      <th>RarConFreqFrzSetA</th>
+      <th>RarConFreqFrzSetB</th>
+      <th>RarConFreqGenSetA</th>
+      <th>RarConFreqGenSetB</th>
+      <th>RarConFreqStmSetA</th>
+      <th>RarConFreqStmSetB</th>
+      <th>RarConFreqThftSetA</th>
+      <th>RarConFreqThftSetB</th>
+      <th>RarConSvtyAdSetA</th>
+      <th>RarConSvtyAdSetB</th>
+      <th>RarConSvtyEscwSetA</th>
+      <th>RarConSvtyEscwSetB</th>
+      <th>RarConSvtyFireSetA</th>
+      <th>RarConSvtyFireSetB</th>
+      <th>RarConSvtyFldSetA</th>
+      <th>RarConSvtyFldSetB</th>
+      <th>RarConSvtyFrzSetA</th>
+      <th>RarConSvtyFrzSetB</th>
+      <th>RarConSvtyGenSetA</th>
+      <th>RarConSvtyGenSetB</th>
+      <th>RarConSvtyStmSetA</th>
+      <th>RarConSvtyStmSetB</th>
+      <th>RarConSvtyThftSetA</th>
+      <th>RarConSvtyThftSetB</th>
+      <th>RarPpFreqSetA</th>
+      <th>RarPpFreqSetB</th>
+      <th>RarPpSvtySetA</th>
+      <th>RarPpSvtySetB</th>
+      <th>RarRentersGrpSetA</th>
+      <th>RarRentersGrpSetB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Quote</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1916-11-18</td>
+      <td>Current Date+5</td>
+      <td>Current Date+2</td>
+      <td>B45 9ND</td>
+      <td>201 Newman Way</td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td>Self-employed (part-time)</td>
+      <td>Fee inspection company</td>
+      <td>Academician</td>
+      <td>Post</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Buildings</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Monthly</td>
+      <td>House</td>
+      <td></td>
+      <td>Detached</td>
+      <td>Rented - Council</td>
+      <td>5</td>
+      <td>1707</td>
+      <td>Preservation Order</td>
+      <td>82657.0</td>
+      <td>11</td>
+      <td>17</td>
+      <td>Flint</td>
+      <td>Concrete</td>
+      <td>No</td>
+      <td>No</td>
+      <td>1</td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>B45 9ND</td>
+      <td>201 Newman Way</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3 years</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tester</td>
+      <td>Privilege</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>12 Installments</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>\n</td>
+      <td>SCT</td>
+      <td>\n</td>
+      <td>XXXXX</td>
+      <td>XXXXX</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>30</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>12</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>21</td>
+      <td>-5</td>
+      <td>27</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>58</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>52</td>
+      <td>-5</td>
+      <td>53</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>25</td>
+      <td>-5</td>
+      <td>14</td>
+      <td>-5</td>
+      <td>33</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>16</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>19</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>47</td>
+      <td>-5</td>
+      <td>40</td>
+      <td>-5</td>
+      <td>29</td>
+      <td>-5</td>
+      <td>49</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quote</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1999-11-14</td>
+      <td>Current Date+1</td>
+      <td>Current Date+5</td>
+      <td>AL4 0N</td>
+      <td>22 Kestrel Way</td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td>Employed (Full time)</td>
+      <td>Agency</td>
+      <td>Academician</td>
+      <td>Post</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Buildings</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Annually</td>
+      <td>Maisonette</td>
+      <td></td>
+      <td>End Terraced</td>
+      <td>Mortgaged</td>
+      <td>5</td>
+      <td>1980</td>
+      <td>Not Listed</td>
+      <td></td>
+      <td>4</td>
+      <td>20</td>
+      <td>Stone</td>
+      <td>Concrete</td>
+      <td>No</td>
+      <td>No</td>
+      <td>1</td>
+      <td>3</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>8.0</td>
+      <td>56.0</td>
+      <td>Yes</td>
+      <td>3000.0</td>
+      <td>2500.0</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AL4 0N</td>
+      <td>22 Kestrel Way</td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Fire</td>
+      <td>04/2023</td>
+      <td>46864.0</td>
+      <td>No</td>
+      <td>Contents Only</td>
+      <td>2 years</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tester</td>
+      <td>Privilege</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>12 Installments</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>\n</td>
+      <td>SCT</td>
+      <td>\n</td>
+      <td>XXXXX</td>
+      <td>XXXXX</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>30</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>12</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>21</td>
+      <td>-5</td>
+      <td>27</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>58</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>52</td>
+      <td>-5</td>
+      <td>53</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>25</td>
+      <td>-5</td>
+      <td>14</td>
+      <td>-5</td>
+      <td>33</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>16</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>19</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>47</td>
+      <td>-5</td>
+      <td>40</td>
+      <td>-5</td>
+      <td>29</td>
+      <td>-5</td>
+      <td>49</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quote</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1971-08-10</td>
+      <td>Current Date+4</td>
+      <td>Current Date+1</td>
+      <td>AL4 0N</td>
+      <td>22 Kestrel Way</td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td>Self-employed (part-time)</td>
+      <td>Broker</td>
+      <td>Academician</td>
+      <td>Post</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Buildings</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Monthly</td>
+      <td>Town House</td>
+      <td></td>
+      <td>Detached</td>
+      <td>Rented - Council</td>
+      <td>5</td>
+      <td>1926</td>
+      <td>Preservation Order</td>
+      <td>49265.0</td>
+      <td>19</td>
+      <td>18</td>
+      <td>Timber</td>
+      <td>Asbestos</td>
+      <td>No</td>
+      <td>No</td>
+      <td>5</td>
+      <td>3</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>More than 60 days</td>
+      <td>One long trip</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AL4 0N</td>
+      <td>22 Kestrel Way</td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4 years</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tester</td>
+      <td>Privilege</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>12 Installments</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>\n</td>
+      <td>SCT</td>
+      <td>\n</td>
+      <td>XXXXX</td>
+      <td>XXXXX</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>30</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>12</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>21</td>
+      <td>-5</td>
+      <td>27</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>58</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>52</td>
+      <td>-5</td>
+      <td>53</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>25</td>
+      <td>-5</td>
+      <td>14</td>
+      <td>-5</td>
+      <td>33</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>16</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>19</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>47</td>
+      <td>-5</td>
+      <td>40</td>
+      <td>-5</td>
+      <td>29</td>
+      <td>-5</td>
+      <td>49</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quote</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1948-10-23</td>
+      <td>Current Date+5</td>
+      <td>Current Date+2</td>
+      <td>B45 9ND</td>
+      <td>201 Newman Way</td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td>Self-employed (full time)</td>
+      <td>Fee audit company</td>
+      <td>Able Seaman or Woman</td>
+      <td>Portal</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Buildings</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Annually</td>
+      <td>Town House</td>
+      <td></td>
+      <td>Detached</td>
+      <td>Rented - Council</td>
+      <td>5</td>
+      <td>1738</td>
+      <td>Not Listed</td>
+      <td></td>
+      <td>3</td>
+      <td>10</td>
+      <td>Timber</td>
+      <td>Tile</td>
+      <td>No</td>
+      <td>No</td>
+      <td>4</td>
+      <td>9</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AL4 0N</td>
+      <td>22 Kestrel Way</td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fire</td>
+      <td>09/2021</td>
+      <td>11826.0</td>
+      <td>Yes</td>
+      <td>Buildings & Contents</td>
+      <td>3 years</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tester</td>
+      <td>Privilege</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>12 Installments</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>\n</td>
+      <td>SCT</td>
+      <td>\n</td>
+      <td>XXXXX</td>
+      <td>XXXXX</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>30</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>12</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>21</td>
+      <td>-5</td>
+      <td>27</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>58</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>52</td>
+      <td>-5</td>
+      <td>53</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>25</td>
+      <td>-5</td>
+      <td>14</td>
+      <td>-5</td>
+      <td>33</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>16</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>19</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>47</td>
+      <td>-5</td>
+      <td>40</td>
+      <td>-5</td>
+      <td>29</td>
+      <td>-5</td>
+      <td>49</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quote</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1978-01-07</td>
+      <td>Current Date+3</td>
+      <td>Current Date+1</td>
+      <td>B45 9ND</td>
+      <td>201 Newman Way</td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td>Employed (Part time)</td>
+      <td>Broker</td>
+      <td>Academician</td>
+      <td>Post</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Buildings</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Monthly</td>
+      <td>House</td>
+      <td></td>
+      <td>End Terraced</td>
+      <td>Rented - Council</td>
+      <td>5</td>
+      <td>1898</td>
+      <td>Grade 1</td>
+      <td>16535.0</td>
+      <td>20</td>
+      <td>9</td>
+      <td>Timber</td>
+      <td>Tile</td>
+      <td>No</td>
+      <td>No</td>
+      <td>4</td>
+      <td>3</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>30 - 60 days</td>
+      <td>One long trip</td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AL4 0N</td>
+      <td>22 Kestrel Way</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Fire</td>
+      <td>12/2021</td>
+      <td>16325.0</td>
+      <td>No</td>
+      <td>Buildings & Contents</td>
+      <td>2 years</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tester</td>
+      <td>Privilege</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>12 Installments</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>\n</td>
+      <td>SCT</td>
+      <td>\n</td>
+      <td>XXXXX</td>
+      <td>XXXXX</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>30</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>12</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>21</td>
+      <td>-5</td>
+      <td>27</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>58</td>
+      <td>-5</td>
+      <td>42</td>
+      <td>-5</td>
+      <td>28</td>
+      <td>-5</td>
+      <td>52</td>
+      <td>-5</td>
+      <td>53</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>25</td>
+      <td>-5</td>
+      <td>14</td>
+      <td>-5</td>
+      <td>33</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>16</td>
+      <td>-5</td>
+      <td>23</td>
+      <td>-5</td>
+      <td>20</td>
+      <td>-5</td>
+      <td>19</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>22</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>54</td>
+      <td>-5</td>
+      <td>36</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>47</td>
+      <td>-5</td>
+      <td>40</td>
+      <td>-5</td>
+      <td>29</td>
+      <td>-5</td>
+      <td>49</td>
+      <td>-5</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>-5</td>
+      <td>-5</td>
+    </tr>
+  </tbody>
+</table>
+        </body>
+        </html>
+        

@@ -1,0 +1,2 @@
+Step 1 -> python api_stub.py -> for expected stub creation
+Step 2 -> python -m streamlit run app.py - for code execution
