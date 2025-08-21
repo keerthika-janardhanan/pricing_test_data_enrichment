@@ -161,15 +161,16 @@ class XMLComparator:
         df_actual = pd.DataFrame([self.row_to_dict(r) for r in self.output_root.findall(".//row")]).fillna("")
         html_actual = df_actual.to_html(border=1, index=False, escape=False)
 
-        # Build HTML
+        # Build HTML with dropdowns
         html_template = """
         <html>
         <head>
         <title>XML Comparison Report</title>
         <style>
-            table {border-collapse: collapse; margin-bottom: 20px;}
+            table {border-collapse: collapse; margin-bottom: 20px; width: 100%;}
             th, td {border: 1px solid black; padding: 5px; text-align: center;}
             .Failed {background-color: #ffc7ce; color: #9c0006;}
+            summary {cursor: pointer; font-weight: bold; margin: 5px 0;}
         </style>
         </head>
         <body>
@@ -183,30 +184,27 @@ class XMLComparator:
 
         <h2>Part 2: Failed Details</h2>
         {% for row in failed_data %}
-            <table>
-                <tr>
-                    <th>Row</th>
-                    {% for attr in row.failed_attrs %}
-                        <th>expected_{{attr.field}}</th>
-                        <th>actual_{{attr.field}}</th>
+            <details>
+                <summary>Scenario {{row.Row}} ({{row.failed_attrs|length}} failed fields)</summary>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Expected</th>
+                        <th>Actual</th>
                         <th>Status</th>
-                    {% endfor %}
-                </tr>
-                <tr>
-                    <td>{{row.Row}}</td>
+                    </tr>
                     {% for attr in row.failed_attrs %}
+                    <tr>
+                        <td>{{attr.field}}</td>
                         <td>{{attr.expected}}</td>
                         <td>{{attr.actual}}</td>
                         <td class="Failed">{{attr.status}}</td>
+                    </tr>
                     {% endfor %}
-                </tr>
-            </table>
+                </table>
+            </details>
         {% endfor %}
 
-        <h2>Part 3: Actual Result (Full Output)</h2>
-        {{actual_xml | safe}}
-        </body>
-        </html>
         """
 
         template = Template(html_template)
@@ -241,7 +239,7 @@ def run_pipeline(file1_path, file2_path, output_dir="results"):
     create_stub_from_actual(stub_expected_file, stub_expected_file, empty_chance=0.3)
 
     # Step4: Compare & HTML report
-    report_file = os.path.join(output_dir, "comparison_report.html")
+    report_file = os.path.join(output_dir, "actual_expected_comparison_result.html")
     comparator = XMLComparator(enriched_pricing_file, stub_expected_file)
     comparator.generate_html_report(report_file)
 
