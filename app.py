@@ -88,7 +88,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # ------------------------
 # UI Flow
 # ------------------------
-st.title("💹 Pricing Data Validation Workflow")
+st.title("💹 Stage 2 - Pricing Validations")
 
 # Step 1
 st.header("Step 1: Collect & Preprocess Pricing Data")
