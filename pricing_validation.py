@@ -7,6 +7,7 @@ import pandas as pd
 from jinja2 import Template
 from xml.dom import minidom
 import requests
+from api_stub import merge_xml_logic   # import function directly
 
 # ---------- FOLDERS ----------
 TEST_DATA_DIR = "test_data"
@@ -75,23 +76,10 @@ def merge_xml(file1, file2_converted, output_file):
     return output_file
 
 # ---------- STEP 2b: Merge via API ----------
-def merge_via_api(file1, file2_converted, output_file, api_url="http://127.0.0.1:8000/merge_xml"):
-    with open(file1, "rb") as f1, open(file2_converted, "rb") as f2:
-        response = requests.post(
-            api_url,
-            files={
-                "file1": ("file1.xml", f1, "application/xml"),
-                "file2": ("file2.xml", f2, "application/xml")
-            }
-        )
 
-    if response.status_code == 200:
-        with open(output_file, "wb") as f:
-            f.write(response.content)
-        print(f"✅ Step2b: API merged XML → {output_file}")
-    else:
-        raise Exception(f"API call failed with status {response.status_code}: {response.text}")
-    return output_file
+def merge_via_api(file1_path, file2_path, output_file):
+    merged_tree = merge_xml_logic(file1_path, file2_path)
+    merged_tree.write(output_file)
 
 # ---------- STEP 3: Create Stub from API result ----------
 def create_stub_from_actual(actual_file, expected_file, empty_chance=0.2):
