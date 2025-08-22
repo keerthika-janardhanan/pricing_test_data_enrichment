@@ -1,48 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
 <dataset>
-	<sheet name="stage4_Header">
-		<row>
+	<sheet name="stage4_Header"><row>
 			<ScenarioID />
 			<Scenario_Type>Quote</Scenario_Type>
 			<Description />
 			<Experian_Title />
 			<Experian_FirstName />
 			<Experian_LastName />
-			<PhDob />
+			<PhDob>1916-11-18</PhDob>
 			<PolStartDate />
 			<MTA_StartDate>Current Date+2</MTA_StartDate>
 			<PhPostcodeResidence>B45 9ND</PhPostcodeResidence>
 			<Residential_AddressLine_1>201 Newman Way</Residential_AddressLine_1>
 			<Residential_AddressLine_2 />
-			<PrpManAdrChangeInd>No</PrpManAdrChangeInd>
+			<PrpManAdrChangeInd />
 			<Manual name="PostCode" />
 			<Manual name="Address Line 1" />
 			<Manual name="Address Line 2" />
-			<EmployStatus>Self-employed (part-time)</EmployStatus>
-			<OccupIndustry />
+			<EmployStatus />
+			<OccupIndustry>Fee inspection company</OccupIndustry>
 			<Occup>Academician</Occup>
 			<Communication />
-			<JointPhInd />
+			<JointPhInd>No</JointPhInd>
 			<JointDateOfBirth />
 			<RelationOfPolicyHolder />
-			<Joint1NameSameInd>No</Joint1NameSameInd>
+			<Joint1NameSameInd />
 			<Cov>Buildings</Cov>
 			<PrpManPromoCode />
 			<PrpPromoORID />
 			<PrpManPromoID />
 			<PetInd />
-			<PhUsualPaymentMtd />
+			<PhUsualPaymentMtd>Monthly</PhUsualPaymentMtd>
 			<PrpPropType />
 			<PrpSelfContainedInd />
-			<PrpPropSubType>Detached</PrpPropSubType>
+			<PrpPropSubType />
 			<PrpPhHomeowner>Rented - Council</PrpPhHomeowner>
 			<PrpPropOccupyYrs>5</PrpPropOccupyYrs>
-			<PrpBldYear>1707</PrpBldYear>
+			<PrpBldYear />
 			<PrpListbld>Preservation Order</PrpListbld>
-			<PrpBldSiDeclared />
-			<PrpBedrooms />
-			<PrpBathrooms>17</PrpBathrooms>
-			<PrpWallConst>Flint</PrpWallConst>
+			<PrpBldSiDeclared>82657.0</PrpBldSiDeclared>
+			<PrpBedrooms>11</PrpBedrooms>
+			<PrpBathrooms />
+			<PrpWallConst />
 			<PrpWallConst.1>Concrete</PrpWallConst.1>
 			<FlatRoofInd>No</FlatRoofInd>
 			<PrpFlatRoof>No</PrpFlatRoof>
@@ -88,9 +87,9 @@
 			<PrpBldBedrooms />
 			<BldBathroomInd />
 			<PrpBldBathrooms />
-			<PhPrevInsDecline>Yes</PhPrevInsDecline>
+			<PhPrevInsDecline />
 			<PrpFldLast10Ind>Yes</PrpFldLast10Ind>
-			<PrpFldCurrentInd>No</PrpFldCurrentInd>
+			<PrpFldCurrentInd />
 			<PrpEmptyInd>No</PrpEmptyInd>
 			<PrpEmptyGtDays />
 			<PrpEmptyReason />
@@ -103,7 +102,7 @@
 			<PrpSubsidIncidents />
 			<PrpSubsidMovementDate />
 			<PrpSubsidLongStandInd />
-			<PrpPermFamilyInd>Yes</PrpPermFamilyInd>
+			<PrpPermFamilyInd />
 			<PrpPermResInd />
 			<PrpUse />
 			<PrpFamilyInd />
@@ -117,7 +116,7 @@
 			<PrpForeignMax />
 			<PrpShareNumPeople />
 			<PrpShareTenInd />
-			<PrpBusInd />
+			<PrpBusInd>No</PrpBusInd>
 			<PrpBusConnectInd />
 			<PrpBusRiskInd />
 			<PrpBusVisitorsDay />
@@ -132,11 +131,11 @@
 			<PrpPermResStudentInd />
 			<SetsSuitesCovInd />
 			<EnhancedUpgradeInd />
-			<PostcodeRisk />
-			<PrpAddressLineRisk1>201 Newman Way</PrpAddressLineRisk1>
+			<PostcodeRisk>B45 9ND</PostcodeRisk>
+			<PrpAddressLineRisk1 />
 			<PrpAddressLineRisk2 />
 			<PrpConSiDeclared />
-			<PrpBldAdInd />
+			<PrpBldAdInd>No</PrpBldAdInd>
 			<PrpConAdInd />
 			<ItmOwnedInd />
 			<ItmCategory />
@@ -158,7 +157,7 @@
 			<PrpPppSiDeclaredUnspecHome />
 			<PrpHE24Ind>Yes</PrpHE24Ind>
 			<PrpFlpInd>No</PrpFlpInd>
-			<ESB_ClaimSource />
+			<ESB_ClaimSource>No</ESB_ClaimSource>
 			<ClaimCode />
 			<ClaimDate />
 			<ClaimIncNet />
@@ -190,7 +189,7 @@
 			<LossCause />
 			<SubLossCause />
 			<CardType />
-			<PhPaymentType>12 Installments</PhPaymentType>
+			<PhPaymentType />
 			<PaymentForm />
 			<ESB_HhBrandPolicyInd />
 			<PolAutoRenewalAcc />
@@ -200,53 +199,53 @@
 			<PrpFlpInd.1 />
 		</row>
 		<row><ScenarioID />
-			<Scenario_Type>Quote</Scenario_Type>
+			<Scenario_Type />
 			<Description />
 			<Experian_Title />
 			<Experian_FirstName />
 			<Experian_LastName />
-			<PhDob />
-			<PolStartDate>Current Date+1</PolStartDate>
-			<MTA_StartDate />
+			<PhDob>1999-11-14</PhDob>
+			<PolStartDate />
+			<MTA_StartDate>Current Date+5</MTA_StartDate>
 			<PhPostcodeResidence>AL4 0N</PhPostcodeResidence>
-			<Residential_AddressLine_1 />
+			<Residential_AddressLine_1>22 Kestrel Way</Residential_AddressLine_1>
 			<Residential_AddressLine_2 />
 			<PrpManAdrChangeInd />
 			<Manual name="PostCode" />
 			<Manual name="Address Line 1" />
 			<Manual name="Address Line 2" />
 			<EmployStatus />
-			<OccupIndustry />
-			<Occup>Academician</Occup>
-			<Communication />
+			<OccupIndustry>Agency</OccupIndustry>
+			<Occup />
+			<Communication>Post</Communication>
 			<JointPhInd>No</JointPhInd>
 			<JointDateOfBirth />
 			<RelationOfPolicyHolder />
-			<Joint1NameSameInd>No</Joint1NameSameInd>
+			<Joint1NameSameInd />
 			<Cov>Buildings</Cov>
 			<PrpManPromoCode />
 			<PrpPromoORID />
 			<PrpManPromoID />
 			<PetInd />
 			<PhUsualPaymentMtd>Annually</PhUsualPaymentMtd>
-			<PrpPropType>Maisonette</PrpPropType>
+			<PrpPropType />
 			<PrpSelfContainedInd />
-			<PrpPropSubType />
-			<PrpPhHomeowner />
-			<PrpPropOccupyYrs>5</PrpPropOccupyYrs>
-			<PrpBldYear />
-			<PrpListbld>Not Listed</PrpListbld>
+			<PrpPropSubType>End Terraced</PrpPropSubType>
+			<PrpPhHomeowner>Mortgaged</PrpPhHomeowner>
+			<PrpPropOccupyYrs />
+			<PrpBldYear>1980</PrpBldYear>
+			<PrpListbld />
 			<PrpBldSiDeclared />
 			<PrpBedrooms>4</PrpBedrooms>
 			<PrpBathrooms>20</PrpBathrooms>
-			<PrpWallConst>Stone</PrpWallConst>
+			<PrpWallConst />
 			<PrpWallConst.1>Concrete</PrpWallConst.1>
-			<FlatRoofInd>No</FlatRoofInd>
+			<FlatRoofInd />
 			<PrpFlatRoof>No</PrpFlatRoof>
 			<PrpAdults>1</PrpAdults>
-			<PrpChildren>3</PrpChildren>
+			<PrpChildren />
 			<AlarmCentralInd>No</AlarmCentralInd>
-			<AlarmProFitInd>Yes</AlarmProFitInd>
+			<AlarmProFitInd />
 			<AlarmSelfFitInd />
 			<AlarmSmokeInd />
 			<WaterDetectorInd />
@@ -286,12 +285,12 @@
 			<BldBathroomInd />
 			<PrpBldBathrooms />
 			<PhPrevInsDecline>No</PhPrevInsDecline>
-			<PrpFldLast10Ind>No</PrpFldLast10Ind>
-			<PrpFldCurrentInd>Yes</PrpFldCurrentInd>
-			<PrpEmptyInd>No</PrpEmptyInd>
+			<PrpFldLast10Ind />
+			<PrpFldCurrentInd />
+			<PrpEmptyInd />
 			<PrpEmptyGtDays />
 			<PrpEmptyReason />
-			<PrpSubsidInd />
+			<PrpSubsidInd>No</PrpSubsidInd>
 			<PrpSubsidAffected />
 			<PrpSubsidInsureInd />
 			<PrpSubsidRepairInd />
@@ -300,7 +299,7 @@
 			<PrpSubsidIncidents />
 			<PrpSubsidMovementDate />
 			<PrpSubsidLongStandInd />
-			<PrpPermFamilyInd />
+			<PrpPermFamilyInd>Yes</PrpPermFamilyInd>
 			<PrpPermResInd />
 			<PrpUse />
 			<PrpFamilyInd />
@@ -314,23 +313,23 @@
 			<PrpForeignMax />
 			<PrpShareNumPeople />
 			<PrpShareTenInd />
-			<PrpBusInd />
-			<PrpBusConnectInd>No</PrpBusConnectInd>
+			<PrpBusInd>Yes</PrpBusInd>
+			<PrpBusConnectInd />
 			<PrpBusRiskInd>No</PrpBusRiskInd>
 			<PrpBusVisitorsDay>8.0</PrpBusVisitorsDay>
 			<PrpBusVisitorsWeek>56.0</PrpBusVisitorsWeek>
-			<PrpBusOneRoomInd />
+			<PrpBusOneRoomInd>Yes</PrpBusOneRoomInd>
 			<PrpBusMoney>3000.0</PrpBusMoney>
-			<PrpBusStock>2500.0</PrpBusStock>
-			<PrpBusValuablesInd>No</PrpBusValuablesInd>
-			<ConvInd>Yes</ConvInd>
+			<PrpBusStock />
+			<PrpBusValuablesInd />
+			<ConvInd />
 			<NwRbsAccInd />
 			<PrpBldMaterialsInd />
 			<PrpPermResStudentInd />
 			<SetsSuitesCovInd />
 			<EnhancedUpgradeInd />
 			<PostcodeRisk>AL4 0N</PostcodeRisk>
-			<PrpAddressLineRisk1>22 Kestrel Way</PrpAddressLineRisk1>
+			<PrpAddressLineRisk1 />
 			<PrpAddressLineRisk2 />
 			<PrpConSiDeclared />
 			<PrpBldAdInd>Yes</PrpBldAdInd>
@@ -354,12 +353,12 @@
 			<PrpPppSiDeclaredUnspec />
 			<PrpPppSiDeclaredUnspecHome />
 			<PrpHE24Ind>No</PrpHE24Ind>
-			<PrpFlpInd />
+			<PrpFlpInd>No</PrpFlpInd>
 			<ESB_ClaimSource>Yes</ESB_ClaimSource>
 			<ClaimCode>Fire</ClaimCode>
-			<ClaimDate>04/2023</ClaimDate>
+			<ClaimDate />
 			<ClaimIncNet>46864.0</ClaimIncNet>
-			<ClaimAdrInd>No</ClaimAdrInd>
+			<ClaimAdrInd />
 			<ClaimCovType>Contents Only</ClaimCovType>
 			<BldClaimFreeYrs>2 years</BldClaimFreeYrs>
 			<ConClaimFreeYrs />
@@ -367,7 +366,7 @@
 			<RBS_REPLACE_CONTENTS />
 			<ESB_PhEmployeeInd />
 			<Actor>tester</Actor>
-			<PolBrand>Privilege</PolBrand>
+			<PolBrand />
 			<AddressLine3 />
 			<Channel />
 			<Source_Code />
@@ -403,216 +402,19 @@
 			<Experian_Title />
 			<Experian_FirstName />
 			<Experian_LastName />
-			<PhDob>1971-08-10</PhDob>
-			<PolStartDate />
-			<MTA_StartDate />
-			<PhPostcodeResidence>AL4 0N</PhPostcodeResidence>
+			<PhDob />
+			<PolStartDate>Current Date+4</PolStartDate>
+			<MTA_StartDate>Current Date+1</MTA_StartDate>
+			<PhPostcodeResidence />
 			<Residential_AddressLine_1>22 Kestrel Way</Residential_AddressLine_1>
 			<Residential_AddressLine_2 />
 			<PrpManAdrChangeInd>No</PrpManAdrChangeInd>
 			<Manual name="PostCode" />
 			<Manual name="Address Line 1" />
 			<Manual name="Address Line 2" />
-			<EmployStatus />
+			<EmployStatus>Self-employed (part-time)</EmployStatus>
 			<OccupIndustry>Broker</OccupIndustry>
 			<Occup />
-			<Communication>Post</Communication>
-			<JointPhInd>No</JointPhInd>
-			<JointDateOfBirth />
-			<RelationOfPolicyHolder />
-			<Joint1NameSameInd>No</Joint1NameSameInd>
-			<Cov>Buildings</Cov>
-			<PrpManPromoCode />
-			<PrpPromoORID />
-			<PrpManPromoID />
-			<PetInd />
-			<PhUsualPaymentMtd />
-			<PrpPropType />
-			<PrpSelfContainedInd />
-			<PrpPropSubType>Detached</PrpPropSubType>
-			<PrpPhHomeowner>Rented - Council</PrpPhHomeowner>
-			<PrpPropOccupyYrs />
-			<PrpBldYear />
-			<PrpListbld />
-			<PrpBldSiDeclared>49265.0</PrpBldSiDeclared>
-			<PrpBedrooms>19</PrpBedrooms>
-			<PrpBathrooms>18</PrpBathrooms>
-			<PrpWallConst>Timber</PrpWallConst>
-			<PrpWallConst.1>Asbestos</PrpWallConst.1>
-			<FlatRoofInd />
-			<PrpFlatRoof>No</PrpFlatRoof>
-			<PrpAdults>5</PrpAdults>
-			<PrpChildren>3</PrpChildren>
-			<AlarmCentralInd>Yes</AlarmCentralInd>
-			<AlarmProFitInd />
-			<AlarmSelfFitInd />
-			<AlarmSmokeInd />
-			<WaterDetectorInd />
-			<WaterValveInd />
-			<PrpBldRepairState />
-			<PrpBldInd />
-			<PrpBldRenovateInd />
-			<PrpBldConvertInd />
-			<PrpBldStoredInd />
-			<PrpBldOccupyInd />
-			<PrpBldStartDate />
-			<PrpBldEndDate />
-			<PrpBldCost />
-			<PrpBldContractorInd />
-			<PrpBldContractorInsureInd />
-			<BldFoundationInd />
-			<BldOtherInd />
-			<BldCosmeticInd />
-			<BldKitchenInd />
-			<BldFlooringInd />
-			<BldWindowsInd />
-			<BldRewireInd />
-			<BldRepairInd />
-			<BldRoofMainInd />
-			<BldRoofDetInd />
-			<BldRoofAttInd />
-			<BldWallsMainInd />
-			<BldWallsDetInd />
-			<BldWallsAttdInd />
-			<BldOutAttdInd />
-			<BldOutDetInd />
-			<BldLoftInd />
-			<BldExtendSingleInd />
-			<BldExtendDoubleInd />
-			<BldBasementInd />
-			<PrpBldBedrooms />
-			<BldBathroomInd />
-			<PrpBldBathrooms />
-			<PhPrevInsDecline>No</PhPrevInsDecline>
-			<PrpFldLast10Ind>Yes</PrpFldLast10Ind>
-			<PrpFldCurrentInd>No</PrpFldCurrentInd>
-			<PrpEmptyInd>Yes</PrpEmptyInd>
-			<PrpEmptyGtDays>More than 60 days</PrpEmptyGtDays>
-			<PrpEmptyReason />
-			<PrpSubsidInd>No</PrpSubsidInd>
-			<PrpSubsidAffected />
-			<PrpSubsidInsureInd />
-			<PrpSubsidRepairInd />
-			<PrpSubsidUnderpinInd />
-			<PrpSubsidCoalRepairInd />
-			<PrpSubsidIncidents />
-			<PrpSubsidMovementDate />
-			<PrpSubsidLongStandInd />
-			<PrpPermFamilyInd />
-			<PrpPermResInd />
-			<PrpUse />
-			<PrpFamilyInd />
-			<PrpOcc />
-			<PrpLodgeNum />
-			<PrpLodgeStudentInd />
-			<PrpLodgeCouncilInd />
-			<PrpGuestsDays />
-			<PrpGuestsMax />
-			<PrpForeignDays />
-			<PrpForeignMax />
-			<PrpShareNumPeople />
-			<PrpShareTenInd />
-			<PrpBusInd>No</PrpBusInd>
-			<PrpBusConnectInd />
-			<PrpBusRiskInd />
-			<PrpBusVisitorsDay />
-			<PrpBusVisitorsWeek />
-			<PrpBusOneRoomInd />
-			<PrpBusMoney />
-			<PrpBusStock />
-			<PrpBusValuablesInd />
-			<ConvInd>Yes</ConvInd>
-			<NwRbsAccInd />
-			<PrpBldMaterialsInd />
-			<PrpPermResStudentInd />
-			<SetsSuitesCovInd />
-			<EnhancedUpgradeInd />
-			<PostcodeRisk>AL4 0N</PostcodeRisk>
-			<PrpAddressLineRisk1>22 Kestrel Way</PrpAddressLineRisk1>
-			<PrpAddressLineRisk2 />
-			<PrpConSiDeclared />
-			<PrpBldAdInd>Yes</PrpBldAdInd>
-			<PrpConAdInd />
-			<ItmOwnedInd />
-			<ItmCategory />
-			<ItmSubCategory />
-			<ItmRolexInd />
-			<ItmDescription />
-			<ItmValue />
-			<ItmProof />
-			<ItmSerialInd />
-			<ItmStonesInd />
-			<ItmInsured />
-			<ItmOutsideHome />
-			<CycOwnedInd />
-			<CycInsured />
-			<CycDescription />
-			<CycValue />
-			<CycOutsideHomeInd />
-			<PrpPppSiDeclaredUnspec />
-			<PrpPppSiDeclaredUnspecHome />
-			<PrpHE24Ind>Yes</PrpHE24Ind>
-			<PrpFlpInd>Yes</PrpFlpInd>
-			<ESB_ClaimSource>No</ESB_ClaimSource>
-			<ClaimCode />
-			<ClaimDate />
-			<ClaimIncNet />
-			<ClaimAdrInd />
-			<ClaimCovType />
-			<BldClaimFreeYrs>4 years</BldClaimFreeYrs>
-			<ConClaimFreeYrs />
-			<RENT />
-			<RBS_REPLACE_CONTENTS />
-			<ESB_PhEmployeeInd />
-			<Actor>tester</Actor>
-			<PolBrand>Privilege</PolBrand>
-			<AddressLine3 />
-			<Channel />
-			<Source_Code />
-			<Reason_code />
-			<PrpVolXS />
-			<Offerings />
-			<FBSaveInd />
-			<PrpFldReOverrideUI />
-			<PremiumOverRide />
-			<ConvDataInd />
-			<ConvStatus />
-			<ConvCustodyInd />
-			<ConvSentence />
-			<RenewalType />
-			<PolPaymentPlanAcc />
-			<PrpRetCallInd />
-			<LossCause />
-			<SubLossCause />
-			<CardType />
-			<PhPaymentType>12 Installments</PhPaymentType>
-			<PaymentForm />
-			<ESB_HhBrandPolicyInd />
-			<PolAutoRenewalAcc />
-			<PrpBldAdInd.1 />
-			<PrpConAdInd.1 />
-			<PrpHE24Ind.1 />
-			<PrpFlpInd.1 />
-		</row>
-		<row><ScenarioID />
-			<Scenario_Type>Quote</Scenario_Type>
-			<Description />
-			<Experian_Title />
-			<Experian_FirstName />
-			<Experian_LastName />
-			<PhDob>1948-10-23</PhDob>
-			<PolStartDate>Current Date+5</PolStartDate>
-			<MTA_StartDate>Current Date+2</MTA_StartDate>
-			<PhPostcodeResidence />
-			<Residential_AddressLine_1>201 Newman Way</Residential_AddressLine_1>
-			<Residential_AddressLine_2 />
-			<PrpManAdrChangeInd />
-			<Manual name="PostCode" />
-			<Manual name="Address Line 1" />
-			<Manual name="Address Line 2" />
-			<EmployStatus>Self-employed (full time)</EmployStatus>
-			<OccupIndustry />
-			<Occup>Able Seaman or Woman</Occup>
 			<Communication />
 			<JointPhInd>No</JointPhInd>
 			<JointDateOfBirth />
@@ -623,25 +425,25 @@
 			<PrpPromoORID />
 			<PrpManPromoID />
 			<PetInd />
-			<PhUsualPaymentMtd>Annually</PhUsualPaymentMtd>
+			<PhUsualPaymentMtd>Monthly</PhUsualPaymentMtd>
 			<PrpPropType>Town House</PrpPropType>
 			<PrpSelfContainedInd />
 			<PrpPropSubType>Detached</PrpPropSubType>
 			<PrpPhHomeowner>Rented - Council</PrpPhHomeowner>
 			<PrpPropOccupyYrs>5</PrpPropOccupyYrs>
-			<PrpBldYear>1738</PrpBldYear>
+			<PrpBldYear>1926</PrpBldYear>
 			<PrpListbld />
-			<PrpBldSiDeclared />
-			<PrpBedrooms>3</PrpBedrooms>
-			<PrpBathrooms>10</PrpBathrooms>
+			<PrpBldSiDeclared>49265.0</PrpBldSiDeclared>
+			<PrpBedrooms>19</PrpBedrooms>
+			<PrpBathrooms />
 			<PrpWallConst />
-			<PrpWallConst.1>Tile</PrpWallConst.1>
+			<PrpWallConst.1 />
 			<FlatRoofInd>No</FlatRoofInd>
 			<PrpFlatRoof>No</PrpFlatRoof>
-			<PrpAdults>4</PrpAdults>
-			<PrpChildren>9</PrpChildren>
-			<AlarmCentralInd>No</AlarmCentralInd>
-			<AlarmProFitInd>Yes</AlarmProFitInd>
+			<PrpAdults>5</PrpAdults>
+			<PrpChildren>3</PrpChildren>
+			<AlarmCentralInd>Yes</AlarmCentralInd>
+			<AlarmProFitInd />
 			<AlarmSelfFitInd />
 			<AlarmSmokeInd />
 			<WaterDetectorInd />
@@ -683,9 +485,9 @@
 			<PhPrevInsDecline />
 			<PrpFldLast10Ind>Yes</PrpFldLast10Ind>
 			<PrpFldCurrentInd />
-			<PrpEmptyInd>No</PrpEmptyInd>
-			<PrpEmptyGtDays />
-			<PrpEmptyReason />
+			<PrpEmptyInd />
+			<PrpEmptyGtDays>More than 60 days</PrpEmptyGtDays>
+			<PrpEmptyReason>One long trip</PrpEmptyReason>
 			<PrpSubsidInd />
 			<PrpSubsidAffected />
 			<PrpSubsidInsureInd />
@@ -728,7 +530,7 @@
 			<PrpAddressLineRisk1>22 Kestrel Way</PrpAddressLineRisk1>
 			<PrpAddressLineRisk2 />
 			<PrpConSiDeclared />
-			<PrpBldAdInd>Yes</PrpBldAdInd>
+			<PrpBldAdInd />
 			<PrpConAdInd />
 			<ItmOwnedInd />
 			<ItmCategory />
@@ -748,21 +550,21 @@
 			<CycOutsideHomeInd />
 			<PrpPppSiDeclaredUnspec />
 			<PrpPppSiDeclaredUnspecHome />
-			<PrpHE24Ind>No</PrpHE24Ind>
-			<PrpFlpInd />
-			<ESB_ClaimSource>Yes</ESB_ClaimSource>
+			<PrpHE24Ind />
+			<PrpFlpInd>Yes</PrpFlpInd>
+			<ESB_ClaimSource />
 			<ClaimCode />
-			<ClaimDate>09/2021</ClaimDate>
+			<ClaimDate />
 			<ClaimIncNet />
-			<ClaimAdrInd>Yes</ClaimAdrInd>
-			<ClaimCovType>Buildings &amp; Contents</ClaimCovType>
-			<BldClaimFreeYrs>3 years</BldClaimFreeYrs>
+			<ClaimAdrInd />
+			<ClaimCovType />
+			<BldClaimFreeYrs>4 years</BldClaimFreeYrs>
 			<ConClaimFreeYrs />
 			<RENT />
 			<RBS_REPLACE_CONTENTS />
 			<ESB_PhEmployeeInd />
-			<Actor />
-			<PolBrand />
+			<Actor>tester</Actor>
+			<PolBrand>Privilege</PolBrand>
 			<AddressLine3 />
 			<Channel />
 			<Source_Code />
@@ -782,7 +584,7 @@
 			<LossCause />
 			<SubLossCause />
 			<CardType />
-			<PhPaymentType>12 Installments</PhPaymentType>
+			<PhPaymentType />
 			<PaymentForm />
 			<ESB_HhBrandPolicyInd />
 			<PolAutoRenewalAcc />
@@ -793,52 +595,52 @@
 		</row>
 		<row>
 			<ScenarioID />
-			<Scenario_Type />
+			<Scenario_Type>Quote</Scenario_Type>
 			<Description />
 			<Experian_Title />
 			<Experian_FirstName />
 			<Experian_LastName />
-			<PhDob>1978-01-07</PhDob>
-			<PolStartDate />
-			<MTA_StartDate>Current Date+1</MTA_StartDate>
-			<PhPostcodeResidence>B45 9ND</PhPostcodeResidence>
+			<PhDob>1948-10-23</PhDob>
+			<PolStartDate>Current Date+5</PolStartDate>
+			<MTA_StartDate />
+			<PhPostcodeResidence />
 			<Residential_AddressLine_1>201 Newman Way</Residential_AddressLine_1>
 			<Residential_AddressLine_2 />
 			<PrpManAdrChangeInd>No</PrpManAdrChangeInd>
 			<Manual name="PostCode" />
 			<Manual name="Address Line 1" />
 			<Manual name="Address Line 2" />
-			<EmployStatus>Employed (Part time)</EmployStatus>
-			<OccupIndustry>Broker</OccupIndustry>
-			<Occup />
-			<Communication>Post</Communication>
-			<JointPhInd />
+			<EmployStatus>Self-employed (full time)</EmployStatus>
+			<OccupIndustry>Fee audit company</OccupIndustry>
+			<Occup>Able Seaman or Woman</Occup>
+			<Communication>Portal</Communication>
+			<JointPhInd>No</JointPhInd>
 			<JointDateOfBirth />
 			<RelationOfPolicyHolder />
-			<Joint1NameSameInd />
-			<Cov />
+			<Joint1NameSameInd>No</Joint1NameSameInd>
+			<Cov>Buildings</Cov>
 			<PrpManPromoCode />
 			<PrpPromoORID />
 			<PrpManPromoID />
 			<PetInd />
-			<PhUsualPaymentMtd />
-			<PrpPropType />
+			<PhUsualPaymentMtd>Annually</PhUsualPaymentMtd>
+			<PrpPropType>Town House</PrpPropType>
 			<PrpSelfContainedInd />
-			<PrpPropSubType>End Terraced</PrpPropSubType>
-			<PrpPhHomeowner>Rented - Council</PrpPhHomeowner>
+			<PrpPropSubType>Detached</PrpPropSubType>
+			<PrpPhHomeowner />
 			<PrpPropOccupyYrs>5</PrpPropOccupyYrs>
-			<PrpBldYear>1898</PrpBldYear>
-			<PrpListbld>Grade 1</PrpListbld>
+			<PrpBldYear>1738</PrpBldYear>
+			<PrpListbld />
 			<PrpBldSiDeclared />
-			<PrpBedrooms>20</PrpBedrooms>
-			<PrpBathrooms>9</PrpBathrooms>
-			<PrpWallConst>Timber</PrpWallConst>
-			<PrpWallConst.1>Tile</PrpWallConst.1>
+			<PrpBedrooms>3</PrpBedrooms>
+			<PrpBathrooms>10</PrpBathrooms>
+			<PrpWallConst />
+			<PrpWallConst.1 />
 			<FlatRoofInd>No</FlatRoofInd>
 			<PrpFlatRoof>No</PrpFlatRoof>
 			<PrpAdults>4</PrpAdults>
-			<PrpChildren>3</PrpChildren>
-			<AlarmCentralInd>Yes</AlarmCentralInd>
+			<PrpChildren>9</PrpChildren>
+			<AlarmCentralInd />
 			<AlarmProFitInd />
 			<AlarmSelfFitInd />
 			<AlarmSmokeInd />
@@ -880,9 +682,9 @@
 			<PrpBldBathrooms />
 			<PhPrevInsDecline>Yes</PhPrevInsDecline>
 			<PrpFldLast10Ind>Yes</PrpFldLast10Ind>
-			<PrpFldCurrentInd>Yes</PrpFldCurrentInd>
-			<PrpEmptyInd>Yes</PrpEmptyInd>
-			<PrpEmptyGtDays>30 - 60 days</PrpEmptyGtDays>
+			<PrpFldCurrentInd>No</PrpFldCurrentInd>
+			<PrpEmptyInd />
+			<PrpEmptyGtDays />
 			<PrpEmptyReason />
 			<PrpSubsidInd>No</PrpSubsidInd>
 			<PrpSubsidAffected />
@@ -893,7 +695,7 @@
 			<PrpSubsidIncidents />
 			<PrpSubsidMovementDate />
 			<PrpSubsidLongStandInd />
-			<PrpPermFamilyInd />
+			<PrpPermFamilyInd>Yes</PrpPermFamilyInd>
 			<PrpPermResInd />
 			<PrpUse />
 			<PrpFamilyInd />
@@ -907,9 +709,9 @@
 			<PrpForeignMax />
 			<PrpShareNumPeople />
 			<PrpShareTenInd />
-			<PrpBusInd />
+			<PrpBusInd>No</PrpBusInd>
 			<PrpBusConnectInd />
-			<PrpBusRiskInd>Yes</PrpBusRiskInd>
+			<PrpBusRiskInd />
 			<PrpBusVisitorsDay />
 			<PrpBusVisitorsWeek />
 			<PrpBusOneRoomInd />
@@ -922,11 +724,11 @@
 			<PrpPermResStudentInd />
 			<SetsSuitesCovInd />
 			<EnhancedUpgradeInd />
-			<PostcodeRisk>AL4 0N</PostcodeRisk>
+			<PostcodeRisk />
 			<PrpAddressLineRisk1>22 Kestrel Way</PrpAddressLineRisk1>
 			<PrpAddressLineRisk2 />
 			<PrpConSiDeclared />
-			<PrpBldAdInd>No</PrpBldAdInd>
+			<PrpBldAdInd>Yes</PrpBldAdInd>
 			<PrpConAdInd />
 			<ItmOwnedInd />
 			<ItmCategory />
@@ -946,15 +748,15 @@
 			<CycOutsideHomeInd />
 			<PrpPppSiDeclaredUnspec />
 			<PrpPppSiDeclaredUnspecHome />
-			<PrpHE24Ind>Yes</PrpHE24Ind>
-			<PrpFlpInd />
+			<PrpHE24Ind />
+			<PrpFlpInd>Yes</PrpFlpInd>
 			<ESB_ClaimSource>Yes</ESB_ClaimSource>
-			<ClaimCode>Fire</ClaimCode>
-			<ClaimDate>12/2021</ClaimDate>
-			<ClaimIncNet />
-			<ClaimAdrInd>No</ClaimAdrInd>
+			<ClaimCode />
+			<ClaimDate>09/2021</ClaimDate>
+			<ClaimIncNet>11826.0</ClaimIncNet>
+			<ClaimAdrInd>Yes</ClaimAdrInd>
 			<ClaimCovType>Buildings &amp; Contents</ClaimCovType>
-			<BldClaimFreeYrs>2 years</BldClaimFreeYrs>
+			<BldClaimFreeYrs>3 years</BldClaimFreeYrs>
 			<ConClaimFreeYrs />
 			<RENT />
 			<RBS_REPLACE_CONTENTS />
@@ -980,7 +782,205 @@
 			<LossCause />
 			<SubLossCause />
 			<CardType />
-			<PhPaymentType />
+			<PhPaymentType>12 Installments</PhPaymentType>
+			<PaymentForm />
+			<ESB_HhBrandPolicyInd />
+			<PolAutoRenewalAcc />
+			<PrpBldAdInd.1 />
+			<PrpConAdInd.1 />
+			<PrpHE24Ind.1 />
+			<PrpFlpInd.1 />
+		</row>
+		<row>
+			<ScenarioID />
+			<Scenario_Type>Quote</Scenario_Type>
+			<Description />
+			<Experian_Title />
+			<Experian_FirstName />
+			<Experian_LastName />
+			<PhDob>1978-01-07</PhDob>
+			<PolStartDate>Current Date+3</PolStartDate>
+			<MTA_StartDate />
+			<PhPostcodeResidence>B45 9ND</PhPostcodeResidence>
+			<Residential_AddressLine_1>201 Newman Way</Residential_AddressLine_1>
+			<Residential_AddressLine_2 />
+			<PrpManAdrChangeInd>No</PrpManAdrChangeInd>
+			<Manual name="PostCode" />
+			<Manual name="Address Line 1" />
+			<Manual name="Address Line 2" />
+			<EmployStatus>Employed (Part time)</EmployStatus>
+			<OccupIndustry>Broker</OccupIndustry>
+			<Occup>Academician</Occup>
+			<Communication>Post</Communication>
+			<JointPhInd>No</JointPhInd>
+			<JointDateOfBirth />
+			<RelationOfPolicyHolder />
+			<Joint1NameSameInd>No</Joint1NameSameInd>
+			<Cov>Buildings</Cov>
+			<PrpManPromoCode />
+			<PrpPromoORID />
+			<PrpManPromoID />
+			<PetInd />
+			<PhUsualPaymentMtd>Monthly</PhUsualPaymentMtd>
+			<PrpPropType>House</PrpPropType>
+			<PrpSelfContainedInd />
+			<PrpPropSubType>End Terraced</PrpPropSubType>
+			<PrpPhHomeowner>Rented - Council</PrpPhHomeowner>
+			<PrpPropOccupyYrs />
+			<PrpBldYear>1898</PrpBldYear>
+			<PrpListbld>Grade 1</PrpListbld>
+			<PrpBldSiDeclared>16535.0</PrpBldSiDeclared>
+			<PrpBedrooms />
+			<PrpBathrooms />
+			<PrpWallConst />
+			<PrpWallConst.1>Tile</PrpWallConst.1>
+			<FlatRoofInd>No</FlatRoofInd>
+			<PrpFlatRoof>No</PrpFlatRoof>
+			<PrpAdults />
+			<PrpChildren>3</PrpChildren>
+			<AlarmCentralInd />
+			<AlarmProFitInd>No</AlarmProFitInd>
+			<AlarmSelfFitInd />
+			<AlarmSmokeInd />
+			<WaterDetectorInd />
+			<WaterValveInd />
+			<PrpBldRepairState>Yes</PrpBldRepairState>
+			<PrpBldInd />
+			<PrpBldRenovateInd />
+			<PrpBldConvertInd />
+			<PrpBldStoredInd />
+			<PrpBldOccupyInd />
+			<PrpBldStartDate />
+			<PrpBldEndDate />
+			<PrpBldCost />
+			<PrpBldContractorInd />
+			<PrpBldContractorInsureInd />
+			<BldFoundationInd />
+			<BldOtherInd />
+			<BldCosmeticInd />
+			<BldKitchenInd />
+			<BldFlooringInd />
+			<BldWindowsInd />
+			<BldRewireInd />
+			<BldRepairInd />
+			<BldRoofMainInd />
+			<BldRoofDetInd />
+			<BldRoofAttInd />
+			<BldWallsMainInd />
+			<BldWallsDetInd />
+			<BldWallsAttdInd />
+			<BldOutAttdInd />
+			<BldOutDetInd />
+			<BldLoftInd />
+			<BldExtendSingleInd />
+			<BldExtendDoubleInd />
+			<BldBasementInd />
+			<PrpBldBedrooms />
+			<BldBathroomInd />
+			<PrpBldBathrooms />
+			<PhPrevInsDecline>Yes</PhPrevInsDecline>
+			<PrpFldLast10Ind />
+			<PrpFldCurrentInd>Yes</PrpFldCurrentInd>
+			<PrpEmptyInd>Yes</PrpEmptyInd>
+			<PrpEmptyGtDays>30 - 60 days</PrpEmptyGtDays>
+			<PrpEmptyReason>One long trip</PrpEmptyReason>
+			<PrpSubsidInd>No</PrpSubsidInd>
+			<PrpSubsidAffected />
+			<PrpSubsidInsureInd />
+			<PrpSubsidRepairInd />
+			<PrpSubsidUnderpinInd />
+			<PrpSubsidCoalRepairInd />
+			<PrpSubsidIncidents />
+			<PrpSubsidMovementDate />
+			<PrpSubsidLongStandInd />
+			<PrpPermFamilyInd>Yes</PrpPermFamilyInd>
+			<PrpPermResInd />
+			<PrpUse />
+			<PrpFamilyInd />
+			<PrpOcc />
+			<PrpLodgeNum />
+			<PrpLodgeStudentInd />
+			<PrpLodgeCouncilInd />
+			<PrpGuestsDays />
+			<PrpGuestsMax />
+			<PrpForeignDays />
+			<PrpForeignMax />
+			<PrpShareNumPeople />
+			<PrpShareTenInd />
+			<PrpBusInd>Yes</PrpBusInd>
+			<PrpBusConnectInd>No</PrpBusConnectInd>
+			<PrpBusRiskInd>Yes</PrpBusRiskInd>
+			<PrpBusVisitorsDay />
+			<PrpBusVisitorsWeek />
+			<PrpBusOneRoomInd />
+			<PrpBusMoney />
+			<PrpBusStock />
+			<PrpBusValuablesInd />
+			<ConvInd />
+			<NwRbsAccInd />
+			<PrpBldMaterialsInd />
+			<PrpPermResStudentInd />
+			<SetsSuitesCovInd />
+			<EnhancedUpgradeInd />
+			<PostcodeRisk>AL4 0N</PostcodeRisk>
+			<PrpAddressLineRisk1>22 Kestrel Way</PrpAddressLineRisk1>
+			<PrpAddressLineRisk2 />
+			<PrpConSiDeclared />
+			<PrpBldAdInd />
+			<PrpConAdInd />
+			<ItmOwnedInd />
+			<ItmCategory />
+			<ItmSubCategory />
+			<ItmRolexInd />
+			<ItmDescription />
+			<ItmValue />
+			<ItmProof />
+			<ItmSerialInd />
+			<ItmStonesInd />
+			<ItmInsured />
+			<ItmOutsideHome />
+			<CycOwnedInd />
+			<CycInsured />
+			<CycDescription />
+			<CycValue />
+			<CycOutsideHomeInd />
+			<PrpPppSiDeclaredUnspec />
+			<PrpPppSiDeclaredUnspecHome />
+			<PrpHE24Ind>Yes</PrpHE24Ind>
+			<PrpFlpInd />
+			<ESB_ClaimSource>Yes</ESB_ClaimSource>
+			<ClaimCode>Fire</ClaimCode>
+			<ClaimDate />
+			<ClaimIncNet>16325.0</ClaimIncNet>
+			<ClaimAdrInd>No</ClaimAdrInd>
+			<ClaimCovType />
+			<BldClaimFreeYrs />
+			<ConClaimFreeYrs />
+			<RENT />
+			<RBS_REPLACE_CONTENTS />
+			<ESB_PhEmployeeInd />
+			<Actor>tester</Actor>
+			<PolBrand>Privilege</PolBrand>
+			<AddressLine3 />
+			<Channel />
+			<Source_Code />
+			<Reason_code />
+			<PrpVolXS />
+			<Offerings />
+			<FBSaveInd />
+			<PrpFldReOverrideUI />
+			<PremiumOverRide />
+			<ConvDataInd />
+			<ConvStatus />
+			<ConvCustodyInd />
+			<ConvSentence />
+			<RenewalType />
+			<PolPaymentPlanAcc />
+			<PrpRetCallInd />
+			<LossCause />
+			<SubLossCause />
+			<CardType />
+			<PhPaymentType>12 Installments</PhPaymentType>
 			<PaymentForm />
 			<ESB_HhBrandPolicyInd />
 			<PolAutoRenewalAcc />
@@ -992,40 +992,40 @@
 	</sheet>
 <RarPcodeMatchLevel>SCT</RarPcodeMatchLevel>
     <factors>
-        <Rar11 />
+        <Rar11>XXXXX</Rar11>
         <Rar12>XXXXX</Rar12>
-        <Rar1>-5</Rar1>
+        <Rar1 />
         <Rar10>-5</Rar10>
         <Rar2>-5</Rar2>
         <Rar3 />
         <Rar4>-5</Rar4>
-        <Rar5 />
+        <Rar5>-5</Rar5>
         <Rar6>-5</Rar6>
-        <Rar7>-5</Rar7>
+        <Rar7 />
         <Rar8>-5</Rar8>
-        <Rar9 />
-        <RarBldFreqAdSetA>30</RarBldFreqAdSetA>
-        <RarBldFreqAdSetB>-5</RarBldFreqAdSetB>
+        <Rar9>-5</Rar9>
+        <RarBldFreqAdSetA />
+        <RarBldFreqAdSetB />
         <RarBldFreqEscwSetA>28</RarBldFreqEscwSetA>
         <RarBldFreqEscwSetB>-5</RarBldFreqEscwSetB>
         <RarBldFreqFireSetA>23</RarBldFreqFireSetA>
         <RarBldFreqFireSetB>-5</RarBldFreqFireSetB>
         <RarBldFreqFldSetA />
-        <RarBldFreqFldSetB />
-        <RarBldFreqFrzSetA>-5</RarBldFreqFrzSetA>
-        <RarBldFreqFrzSetB />
+        <RarBldFreqFldSetB>-5</RarBldFreqFldSetB>
+        <RarBldFreqFrzSetA />
+        <RarBldFreqFrzSetB>-5</RarBldFreqFrzSetB>
         <RarBldFreqGenSetA>21</RarBldFreqGenSetA>
         <RarBldFreqGenSetB>-5</RarBldFreqGenSetB>
-        <RarBldFreqStmSetA />
+        <RarBldFreqStmSetA>27</RarBldFreqStmSetA>
         <RarBldFreqStmSetB>-5</RarBldFreqStmSetB>
         <RarBldFreqSubsSetA>42</RarBldFreqSubsSetA>
         <RarBldFreqSubsSetB>-5</RarBldFreqSubsSetB>
         <RarBldFreqThftSetA>58</RarBldFreqThftSetA>
-        <RarBldFreqThftSetB />
-        <RarBldSvtyAdSetA />
+        <RarBldFreqThftSetB>-5</RarBldFreqThftSetB>
+        <RarBldSvtyAdSetA>42</RarBldSvtyAdSetA>
         <RarBldSvtyAdSetB>-5</RarBldSvtyAdSetB>
         <RarBldSvtyEscwSetA>28</RarBldSvtyEscwSetA>
-        <RarBldSvtyEscwSetB>-5</RarBldSvtyEscwSetB>
+        <RarBldSvtyEscwSetB />
         <RarBldSvtyFireSetA>52</RarBldSvtyFireSetA>
         <RarBldSvtyFireSetB>-5</RarBldSvtyFireSetB>
         <RarBldSvtyFldSetA>53</RarBldSvtyFldSetA>
@@ -1033,49 +1033,49 @@
         <RarBldSvtyFrzSetA>-5</RarBldSvtyFrzSetA>
         <RarBldSvtyFrzSetB>-5</RarBldSvtyFrzSetB>
         <RarBldSvtyGenSetA />
-        <RarBldSvtyGenSetB>-5</RarBldSvtyGenSetB>
+        <RarBldSvtyGenSetB />
         <RarBldSvtyStmSetA>14</RarBldSvtyStmSetA>
         <RarBldSvtyStmSetB>-5</RarBldSvtyStmSetB>
-        <RarBldSvtySubsSetA />
+        <RarBldSvtySubsSetA>33</RarBldSvtySubsSetA>
         <RarBldSvtySubsSetB>-5</RarBldSvtySubsSetB>
-        <RarBldSvtyThftSetA />
-        <RarBldSvtyThftSetB>-5</RarBldSvtyThftSetB>
-        <RarConFreqAdSetA />
-        <RarConFreqAdSetB>-5</RarConFreqAdSetB>
-        <RarConFreqEscwSetA>23</RarConFreqEscwSetA>
+        <RarBldSvtyThftSetA>20</RarBldSvtyThftSetA>
+        <RarBldSvtyThftSetB />
+        <RarConFreqAdSetA>16</RarConFreqAdSetA>
+        <RarConFreqAdSetB />
+        <RarConFreqEscwSetA />
         <RarConFreqEscwSetB>-5</RarConFreqEscwSetB>
         <RarConFreqFireSetA />
-        <RarConFreqFireSetB />
+        <RarConFreqFireSetB>-5</RarConFreqFireSetB>
         <RarConFreqFldSetA>19</RarConFreqFldSetA>
         <RarConFreqFldSetB>-5</RarConFreqFldSetB>
-        <RarConFreqFrzSetA />
-        <RarConFreqFrzSetB>-5</RarConFreqFrzSetB>
+        <RarConFreqFrzSetA>-5</RarConFreqFrzSetA>
+        <RarConFreqFrzSetB />
         <RarConFreqGenSetA>22</RarConFreqGenSetA>
-        <RarConFreqGenSetB>-5</RarConFreqGenSetB>
+        <RarConFreqGenSetB />
         <RarConFreqStmSetA>22</RarConFreqStmSetA>
         <RarConFreqStmSetB />
         <RarConFreqThftSetA />
-        <RarConFreqThftSetB />
-        <RarConSvtyAdSetA />
-        <RarConSvtyAdSetB />
+        <RarConFreqThftSetB>-5</RarConFreqThftSetB>
+        <RarConSvtyAdSetA>36</RarConSvtyAdSetA>
+        <RarConSvtyAdSetB>-5</RarConSvtyAdSetB>
         <RarConSvtyEscwSetA>35</RarConSvtyEscwSetA>
-        <RarConSvtyEscwSetB />
+        <RarConSvtyEscwSetB>-5</RarConSvtyEscwSetB>
         <RarConSvtyFireSetA>54</RarConSvtyFireSetA>
-        <RarConSvtyFireSetB>-5</RarConSvtyFireSetB>
-        <RarConSvtyFldSetA />
-        <RarConSvtyFldSetB>-5</RarConSvtyFldSetB>
+        <RarConSvtyFireSetB />
+        <RarConSvtyFldSetA>36</RarConSvtyFldSetA>
+        <RarConSvtyFldSetB />
         <RarConSvtyFrzSetA />
         <RarConSvtyFrzSetB>-5</RarConSvtyFrzSetB>
         <RarConSvtyGenSetA>47</RarConSvtyGenSetA>
-        <RarConSvtyGenSetB />
-        <RarConSvtyStmSetA>40</RarConSvtyStmSetA>
+        <RarConSvtyGenSetB>-5</RarConSvtyGenSetB>
+        <RarConSvtyStmSetA />
         <RarConSvtyStmSetB>-5</RarConSvtyStmSetB>
         <RarConSvtyThftSetA>29</RarConSvtyThftSetA>
         <RarConSvtyThftSetB>-5</RarConSvtyThftSetB>
-        <RarPpFreqSetA />
-        <RarPpFreqSetB>-5</RarPpFreqSetB>
-        <RarPpSvtySetA />
-        <RarPpSvtySetB>-5</RarPpSvtySetB>
+        <RarPpFreqSetA>49</RarPpFreqSetA>
+        <RarPpFreqSetB />
+        <RarPpSvtySetA>35</RarPpSvtySetA>
+        <RarPpSvtySetB />
         <RarRentersGrpSetA>-5</RarRentersGrpSetA>
         <RarRentersGrpSetB />
     </factors>

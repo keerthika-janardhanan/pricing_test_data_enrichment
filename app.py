@@ -2,80 +2,50 @@ import streamlit as st
 import os
 import xml.etree.ElementTree as ET
 from pricing_validation import run_pipeline
+from streamlit_option_menu import option_menu
 
 # ------------------------
 # Helpers
 # ------------------------
 def load_pricing_testdata(xml_file):
-    """Count number of <row> elements in pricing test data."""
     tree = ET.parse(xml_file)
     root = tree.getroot()
     rows = root.findall(".//row")
     return len(rows)
 
 # ------------------------
-# Global Styling
+# Page Config
 # ------------------------
 st.set_page_config(page_title="Pricing Validation", page_icon="💹", layout="wide")
 
-st.markdown(
-    """
+# ------------------------
+# Global CSS Tweaks
+# ------------------------
+st.markdown("""
     <style>
-    /* Background */
-    .stApp {
-        background-color: #f8f9fa;
+    .block-container {padding-top: 1rem; padding-bottom: 1rem;}
+    .workflow-card {
+        background: #ffffff;
+        padding: 20px 25px;
+        border-radius: 10px;
+        border: 1px solid #e0e0e0;
+        margin-bottom: 20px;
     }
-
-    /* Headers */
-    h1, h2, h3 {
+    .workflow-card h3, .workflow-card h2 {
+        margin-top: 0;
         color: #2c3e50;
-        font-family: 'Segoe UI', sans-serif;
     }
-    h2 {
-    font-size: 20px !important;
-    }
-
-    /* Success & Warning messages */
-    .stSuccess {
-        background-color: #e6ffed !important;
-        border: 1px solid #2ecc71 !important;
-    }
-    .stWarning {
-        background-color: #fff8e6 !important;
-        border: 1px solid #f39c12 !important;
-    }
-
-    /* Buttons */
-    div.stButton > button {
-        background-color: #2c3e50;
-        color: white;
-        border-radius: 8px;
-        padding: 0.6em 1.2em;
-        font-size: 10px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-    div.stButton > button:hover {
-        background-color: #1abc9c;
-        color: white;
-    }
-
-    /* Expanders */
-    .streamlit-expanderHeader {
-        font-weight: bold;
-        font-size: 5px;
-        color: #34495e;
+    .workflow-card p {
+        color: #555;
+        font-size: 14px;
     }
     </style>
-    """,
-    unsafe_allow_html=True,
-)
+""", unsafe_allow_html=True)
 
 # ------------------------
 # Session State Init
 # ------------------------
-for key in ["step1_done", "step2_done", "step3_done", "step4_done",
-            "warn_step2", "warn_step3", "warn_step4"]:
+for key in ["step1_done", "step2_done", "step3_done", "step4_done"]:
     if key not in st.session_state:
         st.session_state[key] = False
 
@@ -86,102 +56,151 @@ OUTPUT_DIR = "results"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ------------------------
-# UI Flow
+# Sidebar Navigation
 # ------------------------
-st.title("💹 Stage 2 - Pricing Validations")
+with st.sidebar:
+    st.title("Pricing Validation Workflow")
+    step = option_menu(
+        "Steps",
+        ["Step 1: Collect Data", "Step 2: Expected Data", "Step 3: Actual Data", "Step 4: Comparison Report"],
+        icons=["cloud-download", "clipboard-data", "gear", "bar-chart"],
+        menu_icon="list-task",
+        default_index=0,
+        orientation="vertical",
+        styles={
+            "container": {"background-color": "#f4f6f9"},
+            "icon": {"color": "#1abc9c", "font-size": "18px"},
+            "nav-link": {"font-size": "14px", "text-align": "left", "margin": "5px", "--hover-color": "#e6f7f1"},
+            "nav-link-selected": {"background-color": "#1abc9c", "color": "white"},
+        },
+    )
+
+# ------------------------
+# Header
+# ------------------------
+st.markdown("""
+<div style="
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+">
+💹 Stage 2 - Pricing Validation
+</div>
+""", unsafe_allow_html=True)
+
+# ------------------------
+# Main Content
+# ------------------------
 
 # Step 1
-st.header("Step 1: Collect & Preprocess Pricing Data")
-if st.button("🔍 Collect Pricing Test Data"):
-    row_count = load_pricing_testdata("test_data/pricing_testdata.xml")
-    st.success(f"✅ Pricing file processed with **{row_count} scenarios**. This file will be processed into application/api")
-    st.session_state.step1_done = True
+# Step 1
+if "Step 1" in step:
+    st.markdown('<div class="workflow-card">', unsafe_allow_html=True)
+    st.subheader("Step 1: Collect & Process Pricing Test Data")
+    st.write("Load pricing test data from TDM - Stage 1.")
+    
+    if st.button("Process test data"):
+        xml_file = "test_data/pricing_testdata.xml"
+        row_count = load_pricing_testdata(xml_file)
+        st.success(f"✔ Processed {row_count} scenarios successfully.")
+        
+        # Read and show XML content
+        with open(xml_file, "r") as f:
+            xml_content = f.read()
+        
+        with st.expander("Pricing test data preview"):
+            st.code(xml_content, language="xml")
+        
+        st.session_state.step1_done = True
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # Step 2
-st.header("Step 2: Generate Expected Pricing Data")
-if st.button("⚙️ Generate Expected Result"):
+elif "Step 2" in step:
+    st.markdown('<div class="workflow-card">', unsafe_allow_html=True)
+    st.subheader("Step 2: Generate Expected Pricing Data")
+    st.write("Generate expected pricing data by applying defined business rules to input data")
     if not st.session_state.step1_done:
-        st.session_state.warn_step2 = True
+        st.warning("⚠ Please complete the previous step.")
     else:
-        enriched, stub_expected, report = run_pipeline(
-            "test_data/pricing_testdata.xml",
-            "test_data/mule_data.json",
-            OUTPUT_DIR
-        )
-        st.session_state.output_files["enriched"] = enriched
-        st.session_state.output_files["stub_expected"] = stub_expected
-        st.session_state.output_files["report"] = report
+        if st.button("Generate Result"):
+            enriched, stub_expected, report = run_pipeline(
+                "test_data/pricing_testdata.xml",
+                "test_data/mule_data.json",
+                OUTPUT_DIR,
+            )
+            st.session_state.output_files.update({
+                "enriched": enriched,
+                "stub_expected": stub_expected,
+                "report": report
+            })
 
-        with open(stub_expected, "r") as f:
-            stub_content = f.read()
+            with open(stub_expected, "r") as f:
+                stub_content = f.read()
 
-        st.success(f"✅ Expected Pricing Data Generated → `{stub_expected}`")
-        with st.expander("📄 View Expected Stub Content"):
-            st.code(stub_content, language="xml")
+            st.success("✔ Expected Pricing Test Results Generated")
+            with st.expander("Preview Result"):
+                st.code(stub_content, language="xml")
 
-        st.download_button(
-            label="⬇️ Download Expected Stub",
-            data=stub_content,
-            file_name="stub_expected_result.xml",
-            mime="application/xml"
-        )
-
-        st.session_state.step2_done = True
-        st.session_state.warn_step2 = False
-
-if st.session_state.warn_step2:
-    st.warning("⚠️ Please proceed with Step 1 to continue.")
+            st.download_button(
+                label="Download Test Results",
+                data=stub_content,
+                file_name="stub_expected_result.xml",
+                mime="application/xml",
+            )
+            st.session_state.step2_done = True
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # Step 3
-st.header("Step 3: Generate Actual Enriched Pricing Data")
-if st.button("🔧 Generate Actual Result"):
+elif "Step 3" in step:
+    st.markdown('<div class="workflow-card">', unsafe_allow_html=True)
+    st.subheader("Step 3: Generate Actual Enrichment Pricing")
+    st.write("Run the pipeline to generate the Enrichment pricing results.")
     if not st.session_state.step2_done:
-        st.session_state.warn_step3 = True
+        st.warning("⚠ Please complete the previous steps.")
     else:
-        enriched_file = st.session_state.output_files.get("enriched")
-        with open(enriched_file, "r") as f:
-            enriched_content = f.read()
+        if st.button("Generate Result"):
+            enriched_file = st.session_state.output_files.get("enriched")
+            with open(enriched_file, "r") as f:
+                enriched_content = f.read()
 
-        st.success(f"✅ Actual Enriched Pricing Data Generated → `{enriched_file}`")
-        with st.expander("📄 View Enriched Pricing Data"):
-            st.code(enriched_content, language="xml")
+            st.success("✔ Enriched Pricing Data Generated")
+            with st.expander("Preview Enriched Data"):
+                st.code(enriched_content, language="xml")
 
-        st.download_button(
-            label="⬇️ Download Enriched Pricing Data",
-            data=enriched_content,
-            file_name="enriched_pricing_testdata.xml",
-            mime="application/xml"
-        )
-
-        st.session_state.step3_done = True
-        st.session_state.warn_step3 = False
-
-if st.session_state.warn_step3:
-    st.warning("⚠️ Please proceed with Step 2 to continue.")
+            st.download_button(
+                label="Download Test Data",
+                data=enriched_content,
+                file_name="enriched_pricing_testdata.xml",
+                mime="application/xml",
+            )
+            st.session_state.step3_done = True
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # Step 4
-st.header("Step 4: Compare Expected vs Actual Results")
-if st.button("📑 Generate Comparison Report"):
+elif "Step 4" in step:
+    st.markdown('<div class="workflow-card">', unsafe_allow_html=True)
+    st.subheader("Step 4: Compare Expected vs Actual Results")
+    st.write("Generate the final report highlighting mismatches between expected and actual data.")
     if not st.session_state.step3_done:
-        st.session_state.warn_step4 = True
+        st.warning("⚠ Please complete the previous steps.")
     else:
-        report_file = st.session_state.output_files.get("report")
-        with open(report_file, "r") as f:
-            report_content = f.read()
+        if st.button("Generate comparison report"):
+            report_file = st.session_state.output_files.get("report")
+            with open(report_file, "r") as f:
+                report_content = f.read()
 
-        st.success(f"✅ Report Generated → `{report_file}`")
-        with st.expander("📄 View Comparison Report"):
-            st.components.v1.html(report_content, height=500, scrolling=True)
+            st.success("✔ Comparison Report Generated")
+            with st.expander("View Report"):
+                st.components.v1.html(report_content, height=600, scrolling=True)
 
-        st.download_button(
-            label="⬇️ Download Comparison Report",
-            data=report_content,
-            file_name="actual_expected_comparison_result.html",
-            mime="text/html"
-        )
-
-        st.session_state.step4_done = True
-        st.session_state.warn_step4 = False
-
-if st.session_state.warn_step4:
-    st.warning("⚠️ Please proceed with Step 3 to continue.")
+            st.download_button(
+                label="Download Report",
+                data=report_content,
+                file_name="actual_expected_comparison_result.html",
+                mime="text/html",
+            )
+            st.session_state.step4_done = True
+    st.markdown('</div>', unsafe_allow_html=True)

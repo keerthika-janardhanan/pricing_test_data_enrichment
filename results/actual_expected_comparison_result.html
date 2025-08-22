@@ -14,27 +14,20 @@
         <table>
             <tr><th>Summary</th><th>Count</th></tr>
             <tr><td>Total tags</td><td>970</td></tr>
-            <tr><td>Passed</td><td>891</td></tr>
-            <tr><td>Failed</td><td>79</td></tr>
+            <tr><td>Passed</td><td>882</td></tr>
+            <tr><td>Failed</td><td>88</td></tr>
         </table>
 
         <h2>Part 2: Failed Details</h2>
         
             <details>
-                <summary>Scenario 1 (15 failed fields)</summary>
+                <summary>Scenario 1 (17 failed fields)</summary>
                 <table>
                     <tr>
                         <th>Field</th>
                         <th>Expected</th>
                         <th>Actual</th>
                         <th>Status</th>
-                    </tr>
-                    
-                    <tr>
-                        <td>PhDob</td>
-                        <td>None</td>
-                        <td>1916-11-18</td>
-                        <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
@@ -45,9 +38,16 @@
                     </tr>
                     
                     <tr>
-                        <td>OccupIndustry</td>
+                        <td>PrpManAdrChangeInd</td>
                         <td>None</td>
-                        <td>Fee inspection company</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>EmployStatus</td>
+                        <td>None</td>
+                        <td>Self-employed (part-time)</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -59,16 +59,9 @@
                     </tr>
                     
                     <tr>
-                        <td>JointPhInd</td>
+                        <td>Joint1NameSameInd</td>
                         <td>None</td>
                         <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PhUsualPaymentMtd</td>
-                        <td>None</td>
-                        <td>Monthly</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -80,16 +73,30 @@
                     </tr>
                     
                     <tr>
-                        <td>PrpBldSiDeclared</td>
+                        <td>PrpPropSubType</td>
                         <td>None</td>
-                        <td>82657.0</td>
+                        <td>Detached</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PrpBedrooms</td>
+                        <td>PrpBldYear</td>
                         <td>None</td>
-                        <td>11</td>
+                        <td>1707</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBathrooms</td>
+                        <td>None</td>
+                        <td>17</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpWallConst</td>
+                        <td>None</td>
+                        <td>Flint</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -108,332 +115,6 @@
                     </tr>
                     
                     <tr>
-                        <td>PrpBusInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PostcodeRisk</td>
-                        <td>None</td>
-                        <td>B45 9ND</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpBldAdInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>ESB_ClaimSource</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                </table>
-            </details>
-        
-            <details>
-                <summary>Scenario 2 (15 failed fields)</summary>
-                <table>
-                    <tr>
-                        <th>Field</th>
-                        <th>Expected</th>
-                        <th>Actual</th>
-                        <th>Status</th>
-                    </tr>
-                    
-                    <tr>
-                        <td>PhDob</td>
-                        <td>None</td>
-                        <td>1999-11-14</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>MTA_StartDate</td>
-                        <td>None</td>
-                        <td>Current Date+5</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Residential_AddressLine_1</td>
-                        <td>None</td>
-                        <td>22 Kestrel Way</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpManAdrChangeInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>EmployStatus</td>
-                        <td>None</td>
-                        <td>Employed (Full time)</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>OccupIndustry</td>
-                        <td>None</td>
-                        <td>Agency</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Communication</td>
-                        <td>None</td>
-                        <td>Post</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpPropSubType</td>
-                        <td>None</td>
-                        <td>End Terraced</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpPhHomeowner</td>
-                        <td>None</td>
-                        <td>Mortgaged</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpBldYear</td>
-                        <td>None</td>
-                        <td>1980</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpSubsidInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpPermFamilyInd</td>
-                        <td>None</td>
-                        <td>Yes</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpBusInd</td>
-                        <td>None</td>
-                        <td>Yes</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpBusOneRoomInd</td>
-                        <td>None</td>
-                        <td>Yes</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpFlpInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                </table>
-            </details>
-        
-            <details>
-                <summary>Scenario 3 (14 failed fields)</summary>
-                <table>
-                    <tr>
-                        <th>Field</th>
-                        <th>Expected</th>
-                        <th>Actual</th>
-                        <th>Status</th>
-                    </tr>
-                    
-                    <tr>
-                        <td>PolStartDate</td>
-                        <td>None</td>
-                        <td>Current Date+4</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>MTA_StartDate</td>
-                        <td>None</td>
-                        <td>Current Date+1</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>EmployStatus</td>
-                        <td>None</td>
-                        <td>Self-employed (part-time)</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Occup</td>
-                        <td>None</td>
-                        <td>Academician</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PhUsualPaymentMtd</td>
-                        <td>None</td>
-                        <td>Monthly</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpPropType</td>
-                        <td>None</td>
-                        <td>Town House</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpPropOccupyYrs</td>
-                        <td>None</td>
-                        <td>5</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpBldYear</td>
-                        <td>None</td>
-                        <td>1926</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpListbld</td>
-                        <td>None</td>
-                        <td>Preservation Order</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>FlatRoofInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>AlarmProFitInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpBldRepairState</td>
-                        <td>None</td>
-                        <td>Yes</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpEmptyReason</td>
-                        <td>None</td>
-                        <td>One long trip</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpPermFamilyInd</td>
-                        <td>None</td>
-                        <td>Yes</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                </table>
-            </details>
-        
-            <details>
-                <summary>Scenario 4 (18 failed fields)</summary>
-                <table>
-                    <tr>
-                        <th>Field</th>
-                        <th>Expected</th>
-                        <th>Actual</th>
-                        <th>Status</th>
-                    </tr>
-                    
-                    <tr>
-                        <td>PhPostcodeResidence</td>
-                        <td>None</td>
-                        <td>B45 9ND</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpManAdrChangeInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>OccupIndustry</td>
-                        <td>None</td>
-                        <td>Fee audit company</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Communication</td>
-                        <td>None</td>
-                        <td>Portal</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Joint1NameSameInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Cov</td>
-                        <td>None</td>
-                        <td>Buildings</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpListbld</td>
-                        <td>None</td>
-                        <td>Not Listed</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpWallConst</td>
-                        <td>None</td>
-                        <td>Timber</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
                         <td>PhPrevInsDecline</td>
                         <td>None</td>
                         <td>Yes</td>
@@ -448,58 +129,23 @@
                     </tr>
                     
                     <tr>
-                        <td>PrpSubsidInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>ConvInd</td>
-                        <td>None</td>
-                        <td>No</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PostcodeRisk</td>
-                        <td>None</td>
-                        <td>AL4 0N</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PrpFlpInd</td>
+                        <td>PrpPermFamilyInd</td>
                         <td>None</td>
                         <td>Yes</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>ClaimCode</td>
+                        <td>PrpAddressLineRisk1</td>
                         <td>None</td>
-                        <td>Fire</td>
+                        <td>201 Newman Way</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>ClaimIncNet</td>
+                        <td>PhPaymentType</td>
                         <td>None</td>
-                        <td>11826.0</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Actor</td>
-                        <td>None</td>
-                        <td>tester</td>
-                        <td class="Failed">Failed</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>PolBrand</td>
-                        <td>None</td>
-                        <td>Privilege</td>
+                        <td>12 Installments</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -507,7 +153,7 @@
             </details>
         
             <details>
-                <summary>Scenario 5 (17 failed fields)</summary>
+                <summary>Scenario 2 (24 failed fields)</summary>
                 <table>
                     <tr>
                         <th>Field</th>
@@ -526,7 +172,21 @@
                     <tr>
                         <td>PolStartDate</td>
                         <td>None</td>
-                        <td>Current Date+3</td>
+                        <td>Current Date+1</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpManAdrChangeInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>EmployStatus</td>
+                        <td>None</td>
+                        <td>Employed (Full time)</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -538,9 +198,176 @@
                     </tr>
                     
                     <tr>
-                        <td>JointPhInd</td>
+                        <td>Joint1NameSameInd</td>
                         <td>None</td>
                         <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpPropType</td>
+                        <td>None</td>
+                        <td>Maisonette</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpPropOccupyYrs</td>
+                        <td>None</td>
+                        <td>5</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpListbld</td>
+                        <td>None</td>
+                        <td>Not Listed</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpWallConst</td>
+                        <td>None</td>
+                        <td>Stone</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>FlatRoofInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpChildren</td>
+                        <td>None</td>
+                        <td>3</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>AlarmProFitInd</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpFldLast10Ind</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpFldCurrentInd</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpEmptyInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBusConnectInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBusStock</td>
+                        <td>None</td>
+                        <td>2500.0</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBusValuablesInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ConvInd</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpAddressLineRisk1</td>
+                        <td>None</td>
+                        <td>22 Kestrel Way</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ClaimDate</td>
+                        <td>None</td>
+                        <td>04/2023</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ClaimAdrInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PolBrand</td>
+                        <td>None</td>
+                        <td>Privilege</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                </table>
+            </details>
+        
+            <details>
+                <summary>Scenario 3 (21 failed fields)</summary>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Expected</th>
+                        <th>Actual</th>
+                        <th>Status</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>PhDob</td>
+                        <td>None</td>
+                        <td>1971-08-10</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PhPostcodeResidence</td>
+                        <td>None</td>
+                        <td>AL4 0N</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Occup</td>
+                        <td>None</td>
+                        <td>Academician</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Communication</td>
+                        <td>None</td>
+                        <td>Post</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -559,23 +386,30 @@
                     </tr>
                     
                     <tr>
-                        <td>PhUsualPaymentMtd</td>
+                        <td>PrpListbld</td>
                         <td>None</td>
-                        <td>Monthly</td>
+                        <td>Preservation Order</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PrpPropType</td>
+                        <td>PrpBathrooms</td>
                         <td>None</td>
-                        <td>House</td>
+                        <td>18</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PrpBldSiDeclared</td>
+                        <td>PrpWallConst</td>
                         <td>None</td>
-                        <td>16535.0</td>
+                        <td>Timber</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpWallConst.1</td>
+                        <td>None</td>
+                        <td>Asbestos</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
@@ -587,28 +421,250 @@
                     </tr>
                     
                     <tr>
-                        <td>PrpEmptyReason</td>
+                        <td>PhPrevInsDecline</td>
                         <td>None</td>
-                        <td>One long trip</td>
+                        <td>No</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PrpPermFamilyInd</td>
+                        <td>PrpFldCurrentInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpEmptyInd</td>
                         <td>None</td>
                         <td>Yes</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PrpBusInd</td>
+                        <td>PrpSubsidInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ConvInd</td>
                         <td>None</td>
                         <td>Yes</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PrpBusConnectInd</td>
+                        <td>PostcodeRisk</td>
+                        <td>None</td>
+                        <td>AL4 0N</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBldAdInd</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpHE24Ind</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ESB_ClaimSource</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PhPaymentType</td>
+                        <td>None</td>
+                        <td>12 Installments</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                </table>
+            </details>
+        
+            <details>
+                <summary>Scenario 4 (12 failed fields)</summary>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Expected</th>
+                        <th>Actual</th>
+                        <th>Status</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>MTA_StartDate</td>
+                        <td>None</td>
+                        <td>Current Date+2</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PhPostcodeResidence</td>
+                        <td>None</td>
+                        <td>B45 9ND</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpPhHomeowner</td>
+                        <td>None</td>
+                        <td>Rented - Council</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpListbld</td>
+                        <td>None</td>
+                        <td>Not Listed</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpWallConst</td>
+                        <td>None</td>
+                        <td>Timber</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpWallConst.1</td>
+                        <td>None</td>
+                        <td>Tile</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>AlarmCentralInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>AlarmProFitInd</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpEmptyInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PostcodeRisk</td>
+                        <td>None</td>
+                        <td>AL4 0N</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpHE24Ind</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ClaimCode</td>
+                        <td>None</td>
+                        <td>Fire</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                </table>
+            </details>
+        
+            <details>
+                <summary>Scenario 5 (14 failed fields)</summary>
+                <table>
+                    <tr>
+                        <th>Field</th>
+                        <th>Expected</th>
+                        <th>Actual</th>
+                        <th>Status</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>MTA_StartDate</td>
+                        <td>None</td>
+                        <td>Current Date+1</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpPropOccupyYrs</td>
+                        <td>None</td>
+                        <td>5</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBedrooms</td>
+                        <td>None</td>
+                        <td>20</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBathrooms</td>
+                        <td>None</td>
+                        <td>9</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpWallConst</td>
+                        <td>None</td>
+                        <td>Timber</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpAdults</td>
+                        <td>None</td>
+                        <td>4</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>AlarmCentralInd</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpFldLast10Ind</td>
+                        <td>None</td>
+                        <td>Yes</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ConvInd</td>
+                        <td>None</td>
+                        <td>No</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PrpBldAdInd</td>
                         <td>None</td>
                         <td>No</td>
                         <td class="Failed">Failed</td>
@@ -622,16 +678,23 @@
                     </tr>
                     
                     <tr>
-                        <td>ClaimIncNet</td>
+                        <td>ClaimDate</td>
                         <td>None</td>
-                        <td>16325.0</td>
+                        <td>12/2021</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
                     <tr>
-                        <td>PhPaymentType</td>
+                        <td>ClaimCovType</td>
                         <td>None</td>
-                        <td>12 Installments</td>
+                        <td>Buildings & Contents</td>
+                        <td class="Failed">Failed</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>BldClaimFreeYrs</td>
+                        <td>None</td>
+                        <td>2 years</td>
                         <td class="Failed">Failed</td>
                     </tr>
                     
