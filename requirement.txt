@@ -3,5 +3,5 @@ pandas
 jinja2
 requests
 streamlit==1.30.0
-streamlit-option-menu
 xmltodict
+git+https://github.com/victoryhb/streamlit-option-menu
