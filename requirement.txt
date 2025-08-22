@@ -3,3 +3,5 @@ flask
 pandas
 jinja2
 requests
+streamlit-option-menu
+xmltodict
