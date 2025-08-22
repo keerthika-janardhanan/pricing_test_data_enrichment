@@ -74,7 +74,18 @@ with st.sidebar:
             "nav-link-selected": {"background-color": "#1abc9c", "color": "white"},
         },
     )
-
+# with st.sidebar:
+#     st.title("Validation Workflow")
+    
+#     step = st.radio(
+#         "Steps",
+#         [
+#             "Step 1: Collect Data",
+#             "Step 2: Expected Data",
+#             "Step 3: Actual Data",
+#             "Step 4: Comparison Report"
+#         ]
+#     )
 # ------------------------
 # Header
 # ------------------------
